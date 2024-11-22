@@ -1,0 +1,18 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+env/
+venv/
+*.env
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Screenshots folder (optional)
+screenshots/
+
+# Config files with sensitive info
+config/api_config.json
