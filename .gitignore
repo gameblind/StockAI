@@ -6,7 +6,8 @@ __pycache__/
 env/
 venv/
 *.env
-
+# config files  
+config/
 # Logs and temporary files
 *.log
 *.tmp

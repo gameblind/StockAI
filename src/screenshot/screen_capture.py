@@ -15,22 +15,19 @@ def create_screenshot_folder(folder_name="screenshots"):
     os.makedirs(folder_path, exist_ok=True)
     return folder_path
 
-def capture_fullscreen(save_path=None):
+def capture_fullscreen(folder_name=None):
     """
     使用 Pillow 截屏并保存到文件
     Args:
-        save_path (str): 截图保存路径
+        folder_name (str): 截图保存文件夹
     Returns:
         str: 保存的文件路径
     """
     try:
         # 如果没有提供路径，则保存到子文件夹中
-        folder_path = create_screenshot_folder()
+        folder_path = create_screenshot_folder(folder_name)
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        if save_path is None:
-            save_path = os.path.join(folder_path, f"screenshot_{timestamp}.png")
-        else:
-            save_path = os.path.join(folder_path, save_path)
+        save_path = os.path.join(folder_path, f"screenshot_{timestamp}.png")
 
         # 截取全屏并保存
         screenshot = ImageGrab.grab()

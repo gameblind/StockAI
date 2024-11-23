@@ -1,34 +1,60 @@
 import json
+import os
 from pynput import keyboard
 from src.screenshot.screen_capture import capture_fullscreen
+from src.ocr.ocr_processor import extract_text_from_image, extract_stock_info
 
-# 加载快捷键配置
-def load_shortcuts(config_path="config/shortcuts.json"):
+# 加载配置文件
+def load_settings(config_path="config/setting.json"):
     """
-    加载快捷键配置文件
+    加载配置文件
     Args:
         config_path (str): 配置文件路径
     Returns:
-        dict: 包含快捷键配置的字典
+        dict: 配置文件的内容
     """
     try:
         with open(config_path, "r") as f:
+            print(f"成功加载配置文件: {config_path}")
             return json.load(f)
     except FileNotFoundError:
-        print(f"配置文件 {config_path} 未找到，使用默认快捷键")
-        return {"screenshot": "ctrl+shift+i"}
+        print(f"配置文件 {config_path} 未找到，请确保配置文件存在")
+        raise
+    except json.JSONDecodeError as e:
+        print(f"配置文件 {config_path} 格式错误: {e}")
+        raise
 
-# 截图触发逻辑
-
-def trigger_screenshot():
-    print("快捷键触发截图...")
-    screenshot_path = capture_fullscreen()
-    if screenshot_path:
+def trigger_screenshot_and_recognize(settings):
+    """
+    快捷键触发截图并识别内容
+    Args:
+        settings (dict): 配置文件内容
+    """
+    print("快捷键触发截图并识别内容...")
+    screenshot_folder = settings.get("screenshot_folder", "screenshots")
+    screenshot_path = capture_fullscreen(screenshot_folder)
+    if screenshot_path and screenshot_path.endswith((".png", ".jpg", ".jpeg")):
         print(f"截图成功，保存路径: {screenshot_path}")
-    else:
-        print("截图失败！")
 
-# 监听逻辑
+        # 使用 OCR 识别图像内容
+        ocr_language = settings.get("ocr_language", "eng+chi_sim")
+        text = extract_text_from_image(screenshot_path, ocr_language)
+        if text:
+            print("提取的文本内容：")
+            print(text)
+
+            # 提取股票信息
+            stock_info = extract_stock_info(text)
+            if stock_info:
+                print("解析的股票信息：")
+                print(stock_info)
+            else:
+                print("未能解析出有效的股票信息")
+        else:
+            print("未能提取到文本内容")
+    else:
+        print("截图失败：未生成有效文件！")
+
 def bind_shortcut(shortcut, action):
     """
     绑定快捷键
@@ -66,14 +92,19 @@ def bind_shortcut(shortcut, action):
     return listener
 
 def main():
+    """
+    主程序入口
+    """
     print("StockAI 启动...")
 
-    # 加载快捷键配置
-    shortcuts = load_shortcuts()
-    screenshot_shortcut = shortcuts.get("screenshot", "ctrl+shift+i")
+    # 加载配置
+    settings = load_settings()
+
+    # 获取快捷键配置
+    screenshot_shortcut = settings.get("shortcuts", {}).get("screenshot", "ctrl+shift+i")
 
     print(f"绑定截图快捷键为: {screenshot_shortcut}")
-    bind_shortcut(screenshot_shortcut, trigger_screenshot)
+    bind_shortcut(screenshot_shortcut, lambda: trigger_screenshot_and_recognize(settings))
 
     # 防止主线程退出
     print("按下 Ctrl+C 退出程序")
