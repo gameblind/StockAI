@@ -1,0 +1,48 @@
+src
+├── __init__.py
+├── __pycache__
+│   ├── __init__.cpython-311.pyc
+│   └── main.cpython-311.pyc
+├── analyzer
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-311.pyc
+│   │   └── analyze.cpython-311.pyc
+│   └── analyze.py
+├── data_fetcher
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-311.pyc
+│   │   ├── fetch_data.cpython-311.pyc
+│   │   └── fetch_data_by.cpython-311.pyc
+│   ├── fetch_data.py
+│   └── fetch_data_by.py
+├── llm
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-311.pyc
+│   │   └── api_request.cpython-311.pyc
+│   ├── api_request.py
+│   └── llm_integration.py
+├── main.py
+├── ocr
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-311.pyc
+│   │   └── ocr_processor.cpython-311.pyc
+│   └── ocr_processor.py
+├── screenshot
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-311.pyc
+│   │   └── screen_capture.cpython-311.pyc
+│   └── screen_capture.py
+├── setting_json.code-search
+└── upload_images
+    ├── __init__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-311.pyc
+    │   └── upload_images.cpython-311.pyc
+    └── upload_images.py
+
+14 directories, 32 files

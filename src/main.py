@@ -2,13 +2,17 @@ import json
 import os
 import datetime
 import re
+import sys
+
+# 添加项目根目录到 sys.path
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from pynput import keyboard
 from src.screenshot.screen_capture import capture_fullscreen
 from src.upload_images.upload_images import upload_image_to_github
-from src.llm.api_request import submit_request_to_api
+from src.llm.api_request import submit_request_to_api, extract_stock_info_from_model
 from src.ocr.ocr_processor import extract_text_from_image, extract_stock_info
 from src.data_fetcher.fetch_data_by import fetch_historical_data, save_data_to_file
-from src.llm.api_request import extract_stock_info_from_model
 # 加载配置文件
 def load_settings(config_path="config/settings.json"):
     try:
