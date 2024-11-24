@@ -4,7 +4,7 @@ import base64
 
 # API 配置信息
 api_url = "https://ai.comfly.chat/v1/chat/completions"
-api_key = "sk-Yo2e1eiFeFNflZvJ8086A7FcEd994eD29fBaB15dA2311f9a"
+api_key = ""
 
 # 获取当前脚本所在目录
 current_dir = os.path.dirname(__file__)
