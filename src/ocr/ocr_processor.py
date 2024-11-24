@@ -16,7 +16,7 @@ def extract_text_from_image(image_path, lang="eng+chi_sim"):
         img = Image.open(image_path)
         text = pytesseract.image_to_string(img, lang=lang)  # 支持多语言
         print("=== 提取的文本内容 ===")
-        print(text)
+        print("OCR提取的文本: ...")
         print("=====================")
         return text
     except Exception as e:
@@ -52,7 +52,7 @@ def extract_stock_info(text):
                 stock_info["name"] = re.sub(r'\s+', '', raw_name)  # 去除中括号内容中的多余空格
 
         # 打印调试信息
-        print("=== 解析的股票信息 ===")
+        print("=== OCR解析的股票信息 ===")
         print(f"股票代码: {stock_info['code']}")
         print(f"股票名称: {stock_info['name']}")
         print("=====================")
@@ -61,7 +61,7 @@ def extract_stock_info(text):
     except Exception as e:
         print(f"解析股票信息失败: {e}")
         return None
-    
+        
 
 # 测试代码
 if __name__ == "__main__":

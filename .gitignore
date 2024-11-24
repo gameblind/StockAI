@@ -2,18 +2,41 @@
 __pycache__/
 *.py[cod]
 
-# Virtual environment
+# Byte-compiled and temporary files
+*.pyo
+*.pyd
+*.so
+*.swp
+*.swo
+.DS_Store
+
+# Virtual environment directories
 env/
 venv/
 *.env
-# config files  
-config/
+
 # Logs and temporary files
 *.log
 *.tmp
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
 
 # Screenshots folder (optional)
 screenshots/
 
 # Config files with sensitive info
+config/
 config/api_config.json
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS specific files
+.DS_Store
+
+# Output files and directories
+output/
+*.output

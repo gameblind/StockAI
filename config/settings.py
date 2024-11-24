@@ -2,7 +2,7 @@ import os
 import json
 
 class ConfigManager:
-    def __init__(self, config_path="config/settings.json"):
+    def __init__(self, config_path="config/setting.json"):  # 更新文件名为 settings.json
         self.config_path = config_path
         self.config = self.load_config()
 
