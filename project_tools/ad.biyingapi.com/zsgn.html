@@ -1,0 +1,384 @@
+<!DOCTYPE html><html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>API文档 | 必盈API | 金融数据服务</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="static/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="static/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+    <!-- End layout styles -->
+	<script src="https://hm.baidu.com/hm.js?a525b3a8ede698e09c51bfa27ecf323e"></script><script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?a525b3a8ede698e09c51bfa27ecf323e";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+   
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="http://www.biyingapi.com"><img src="static/picture/logo.png" alt="logo"></a>
+          <a class="sidebar-brand brand-logo-mini" href="http://www.biyingapi.com"><img src="static/picture/logomini.png" alt="logo"></a>
+        </div>
+		
+		
+        <ul class="nav">
+ 
+          <li class="nav-item nav-category">
+            <span class="nav-link">API文档</span>	
+						
+						
+						
+						
+			</li><li class="nav-item menu-items active">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic1" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>							
+			    <span class="menu-title">沪深基础数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse show" id="ui-basic1">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="hslb.html">沪深股票列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="gsxq.html">公司详情</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="zjl.html">资金流</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zdgc.html">涨跌股池</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="rzrq.html">融资融券</a></li>
+				  <li class="nav-item"> <a class="nav-link active" href="zsgn.html">指数、行业、概念</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="ssjy.html">实时交易</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zxsj.html">最新交易数据</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="lssj.html">历史交易数据</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">沪深分析数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic2">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="tzck.html">投资参考</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="lhb.html">龙虎榜</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="scbx.html">市场表现</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="cwfx.html">财务分析</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="jgcg.html">机构持股</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="bkzj.html">板块资金流向</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="ggzj.html">个股资金流向</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zjlx.html">资金线路图</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic3" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">沪深指数数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic3">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="hzlb.html">沪深指数列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="hzss.html">实时数据</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="zsjy.html">最新交易数据</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="lsjy.html">历史交易数据</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic4" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">基金行情数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic4">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="jjlb.html">基金列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="gzhq.html">估值行情</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="jszb.html">技术指标</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="daxx.html">档案信息</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			
+       
+        </ul>
+      
+	  
+	  </nav>
+	  
+	  
+	  
+	  
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="static/picture/logomini.png" alt="logo"></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+ 
+			
+			
+			<button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+			  
+			  
+			  
+          
+            
+			
+			
+			
+			<div class="row">
+				
+		       <!-- 指数、行业、概念 -->
+				
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title2">指数、行业、概念</h4>
+                    <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hszg/list/biyinglicence">http://api.biyingapi.com/hszg/list/您的licence</a></p>
+					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hszg/list/biyinglicence">http://api1.biyingapi.com/hszg/list/您的licence</a></p>
+					<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hszg/list/biyinglicence">http://n.biyingapi.com/hszg/list/您的licence</a></p>
+					<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hszg/list/biyinglicence">http://b.biyingapi.com/hszg/list/您的licence</a></p>
+					<p class="card-description2"> 接口说明：获取指数、行业、概念（包括基金，债券，美股，外汇，期货，黄金等的代码），其中isleaf为1（叶子节点）的记录的code（代码）可以作为下方接口的参数传入，从而得到某个指数、行业、概念下的相关股票。</p>
+					<p class="card-description2"> 数据更新：每周六03:00更新</p>
+					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+                    <p></p>
+                    <div class="table-responsive">
+                      <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th> 字段名称 </th>
+                            <th> 数据类型 </th>
+                            <th> 字段说明 </th>                           
+                          </tr>
+
+    											<tr>
+    												<td>code
+    												</td><td>string
+    												</td><td>代码
+    											</td></tr>
+    											<tr>
+    												<td>name
+    												</td><td>string
+    												</td><td>名称
+    											</td></tr>
+    											<tr>
+    												<td>type1
+    												</td><td>number
+    												</td><td>
+    													一级分类（0:A股,1:创业板,2:科创板,3:基金,4:香港股市,5:债券,6:美国股市,7:外汇,8:期货,9:黄金,10:英国股市）
+    												
+    											</td></tr>
+    											<tr>
+    												<td>type2
+    												</td><td>number
+    												</td><td>
+    													二级分类（0:A股-申万行业,1:A股-申万二级,2:A股-热门概念,3:A股-概念板块,4:A股-地域板块,5:A股-证监会行业,6:A股-分类,7:A股-指数成分,8:A股-风险警示,9:A股-大盘指数,10:A股-次新股,11:A股-沪港通,12:A股-深港通,13:基金-封闭式基金,14:基金-开放式基金,15:基金-货币型基金,16:基金-ETF基金净值,17:基金-ETF基金行情,18:基金-LOF基金行情,21:基金-科创板基金,22:香港股市-恒生行业,23:香港股市-全部港股,24:香港股市-热门港股,25:香港股市-蓝筹股,26:香港股市-红筹股,27:香港股市-国企股,28:香港股市-创业板,29:香港股市-指数,30:香港股市-A+H,31:香港股市-窝轮,32:香港股市-ADR,33:香港股市-沪港通,34:香港股市-深港通,35:香港股市-中华系列指数,36:债券-沪深债券,37:债券-深市债券,38:债券-沪市债券,39:债券-沪深可转债,40:美国股市-中国概念股,41:美国股市-科技类,42:美国股市-金融类,43:美国股市-制造零售类,44:美国股市-汽车能源类,45:美国股市-媒体类,46:美国股市-医药食品类,48:外汇-基本汇率,49:外汇-热门汇率,50:外汇-所有汇率,51:外汇-交叉盘汇率,52:外汇-美元相关汇率,53:外汇-人民币相关汇率,54:期货-全球期货,55:期货-中国金融期货交易所,56:期货-上海期货交易所,57:期货-大连商品交易所,58:期货-郑州商品交易所,59:黄金-黄金现货,60:黄金-黄金期货
+    												
+    											</td></tr>
+    											<tr>
+    												<td>level
+    												</td><td>number
+    												</td><td>层级，从0开始，根节点为0，二级节点为1，以此类推
+    											</td></tr>
+    											<tr>
+    												<td>pcode
+    												</td><td>string
+    												</td><td>父节点代码
+    											</td></tr>
+    											<tr>
+    												<td>pname
+    												</td><td>string
+    												</td><td>父节点名称
+    											</td></tr>
+    											<tr>
+    												<td>isleaf
+    												</td><td>number
+    												</td><td>是否为叶子节点，0：否，1：是
+    											</td></tr>
+                          <tr>                                                
+                        
+                      </tr></thead></table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  <!-- 根据指数、行业、概念找相关股票 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">根据指数、行业、概念找相关股票</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hszg/gg/sw_sysh/biyinglicence">http://api.biyingapi.com/hszg/gg/指数、行业、概念代码/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hszg/gg/sw_sysh/biyinglicence">http://api1.biyingapi.com/hszg/gg/指数、行业、概念代码/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hszg/gg/sw_sysh/biyinglicence">http://n.biyingapi.com/hszg/gg/指数、行业、概念代码/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hszg/gg/sw_sysh/biyinglicence">http://b.biyingapi.com/hszg/gg/指数、行业、概念代码/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据“指数、行业、概念树”接口得到的代码作为参数，得到相关的股票。</p>
+			  					<p class="card-description2"> 数据更新：每周六03:00更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+											<tr>
+												<td>dm
+												</td><td>string
+												</td><td>代码（根据接口参数可能是A股股票代码，也可能是其他指数、行业、概念的股票代码）
+											</td></tr>
+											<tr>
+												<td>mc
+												</td><td>string
+												</td><td>名称（根据接口参数可能是A股股票代码，也可能是其他指数、行业、概念的股票名称）
+											</td></tr>
+											<tr>
+												<td>jys
+												</td><td>string
+												</td><td>交易所，sh表示上证，sz表示深证（如果返回的是A股的股票，那么有值，否则是null）
+											</td></tr>
+			              <tr>                                                
+			            </tr></tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+		      <!-- 根据股票找相关指数、行业、概念 -->
+		      				
+		      <div class="col-lg-12 grid-margin stretch-card">
+		        <div class="card">
+		          <div class="card-body">
+		            <h4 class="card-title2">根据股票找相关指数、行业、概念</h4>
+		            <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hszg/zg/000001/biyinglicence">http://api.biyingapi.com/hszg/zg/股票代码(如000001)/您的licence</a></p>
+		      					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hszg/zg/000001/biyinglicence">http://api1.biyingapi.com/hszg/zg/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hszg/zg/000001/biyinglicence">http://n.biyingapi.com/hszg/zg/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hszg/zg/000001/biyinglicence">http://b.biyingapi.com/hszg/zg/股票代码(如000001)/您的licence</a></p>
+		      					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码作为参数，得到相关的指数、行业、概念。</p>
+		      					<p class="card-description2"> 数据更新：每周六03:00更新</p>
+		      					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+		      					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+		            <p></p>
+		            <div class="table-responsive">
+		              <table class="table table-dark">
+		                <thead>
+		                  <tr>
+		                    <th> 字段名称 </th>
+		                    <th> 数据类型 </th>
+		                    <th> 字段说明 </th>                           
+		                  </tr>
+		                </thead>
+		                <tbody>
+											<tr>
+												<td>code
+												</td><td>string
+												</td><td>指数、行业、概念代码，如：sw2_650300
+											</td></tr>
+											<tr>
+												<td>name
+												</td><td>string
+												</td><td>指数、行业、概念名称，如：沪深股市-申万二级-国防军工-地面兵装
+											</td></tr>
+		                  <tr>                                                
+		                </tr></tbody>
+		              </table>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+			  
+             
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              Copyright © 2018-2024 必盈网络科技服务有限公司
+            </div>
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+			  客服电话：184-3512-8452&nbsp;&nbsp;&nbsp;&nbsp;客服微信ID：biyingapiclient
+			</div>
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+			  <a target="_blank" href="https://beian.miit.gov.cn/">网站备案号：晋ICP备2023021176号</a>
+			  
+			</div>
+			
+			<div class="d-sm-flex justify-content-center justify-content-sm-between" style="color: red;">
+			       风险提示：本站所有免费及收费信息和数据仅供参考，不构成投资建议，本站不承担由此导致的任何法律责任。
+			</div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="static/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="static/js/off-canvas.js"></script>
+    <script src="static/js/hoverable-collapse.js"></script>
+    <script src="static/js/misc.js"></script>
+    <script src="static/js/settings.js"></script>
+    <script src="static/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+  
+</body></html>

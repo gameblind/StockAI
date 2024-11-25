@@ -1,0 +1,1888 @@
+<!DOCTYPE html><html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>API文档 | 必盈API | 金融数据服务</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="static/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="static/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+    <!-- End layout styles -->
+	<script src="https://hm.baidu.com/hm.js?a525b3a8ede698e09c51bfa27ecf323e"></script><script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?a525b3a8ede698e09c51bfa27ecf323e";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+   
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="http://www.biyingapi.com"><img src="static/picture/logo.png" alt="logo"></a>
+          <a class="sidebar-brand brand-logo-mini" href="http://www.biyingapi.com"><img src="static/picture/logomini.png" alt="logo"></a>
+        </div>
+		
+		
+        <ul class="nav">
+ 
+          <li class="nav-item nav-category">
+            <span class="nav-link">API文档</span>	
+						
+						
+						
+						
+			</li><li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic1" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>							
+			    <span class="menu-title">沪深基础数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic1">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="hslb.html">沪深股票列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="gsxq.html">公司详情</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="zjl.html">资金流</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zdgc.html">涨跌股池</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="rzrq.html">融资融券</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zsgn.html">指数、行业、概念</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="ssjy.html">实时交易</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zxsj.html">最新交易数据</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="lssj.html">历史交易数据</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">沪深分析数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic2">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="tzck.html">投资参考</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="lhb.html">龙虎榜</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="scbx.html">市场表现</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="cwfx.html">财务分析</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="jgcg.html">机构持股</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="bkzj.html">板块资金流向</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="ggzj.html">个股资金流向</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zjlx.html">资金线路图</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic3" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">沪深指数数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic3">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="hzlb.html">沪深指数列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="hzss.html">实时数据</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="zsjy.html">最新交易数据</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="lsjy.html">历史交易数据</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			<li class="nav-item menu-items active">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic4" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">基金行情数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse show" id="ui-basic4">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="jjlb.html">基金列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="gzhq.html">估值行情</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="jszb.html">技术指标</a></li>
+				  <li class="nav-item"> <a class="nav-link active" href="daxx.html">档案信息</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			
+       
+        </ul>
+      
+	  
+	  </nav>
+	  
+	  
+	  
+	  
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="static/picture/logomini.png" alt="logo"></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+ 
+			
+			
+			<button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+			  
+			  
+			  
+          
+            
+			
+			
+			
+			<div class="row">
+				
+		       <!-- 基金概况 -->
+				
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title2">基金概况</h4>
+                    <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/jjgk/000001/biyinglicence">http://api.biyingapi.com/jj/jjgk/基金代码(如000001)/您的licence</a></p>
+					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/jjgk/000001/biyinglicence">http://api1.biyingapi.com/jj/jjgk/基金代码(如000001)/您的licence</a></p>
+					<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/jjgk/000001/biyinglicence">http://n.biyingapi.com/jj/jjgk/基金代码(如000001)/您的licence</a></p>
+					<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/jjgk/000001/biyinglicence">http://b.biyingapi.com/jj/jjgk/基金代码(如000001)/您的licence</a></p>
+					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到基金的基本介绍。</p>
+					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+                    <p></p>
+                    <div class="table-responsive">
+                      <table class="table table-dark">
+                        <thead>
+                          <tr>
+                          												<td>字段名称
+                          												</td><td>数据类型
+                          												</td><td>字段说明
+                          											</td></tr>
+                          											<tr>
+                          											<td>dm
+                          											</td><td>string
+                          											</td><td>基金代码
+                          											</td></tr>
+                          											<tr>
+                          											<td>qc
+                          											</td><td>string
+                          											</td><td>基金全称
+                          											</td></tr>
+                          											<tr>
+                          											<td>jc
+                          											</td><td>string
+                          											</td><td>基金简称
+                          											</td></tr>
+                          											<tr>
+                          											<td>lx
+                          											</td><td>string
+                          											</td><td>基金类型
+                          											</td></tr>
+                          											<tr>
+                          											<td>pub
+                          											</td><td>string
+                          											</td><td>发行日期
+                          											</td></tr>
+                          											<tr>
+                          											<td>gm
+                          											</td><td>string
+                          											</td><td>成立日期/规模
+                          											</td></tr>
+                          											<tr>
+                          											<td>zcgm
+                          											</td><td>string
+                          											</td><td>资产规模
+                          											</td></tr>
+                          											<tr>
+                          											<td>fegm
+                          											</td><td>string
+                          											</td><td>份额规模
+                          											</td></tr>
+                          											<tr>
+                          											<td>glr
+                          											</td><td>string
+                          											</td><td>基金管理人
+                          											</td></tr>
+                          											<tr>
+                          											<td>tgr
+                          											</td><td>string
+                          											</td><td>基金托管人
+                          											</td></tr>
+                          											<tr>
+                          											<td>jlr
+                          											</td><td>string
+                          											</td><td>基金经理人
+                          											</td></tr>
+                          											<tr>
+                          											<td>ljfh
+                          											</td><td>string
+                          											</td><td>成立以来分红
+                          											</td></tr>
+                          											<tr>
+                          											<td>glfv
+                          											</td><td>string
+                          											</td><td>管理费率
+                          											</td></tr>
+                          											<tr>
+                          											<td>tgfl
+                          											</td><td>string
+                          											</td><td>托管费率
+                          											</td></tr>
+                          											<tr>
+                          											<td>xsfl
+                          											</td><td>string
+                          											</td><td>销售服务费率
+                          											</td></tr>
+                          											<tr>
+                          											<td>rgfl
+                          											</td><td>string
+                          											</td><td>最高认购费率
+                          											</td></tr>
+                          											<tr>
+                          											<td>sgfl
+                          											</td><td>string
+                          											</td><td>最高申购费率
+                          											</td></tr>
+                          											<tr>
+                          											<td>shfl
+                          											</td><td>string
+                          											</td><td>最高赎回费率
+                          											</td></tr>
+                          											<tr>
+                          											<td>bjjz
+                          											</td><td>string
+                          											</td><td>业绩比较基准
+                          											</td></tr>
+                          											<tr>
+                          											<td>gzbd
+                          											</td><td>string
+                          											</td><td>跟踪标的
+                          											</td></tr>
+                          											<tr>
+                          											<td>tzmb
+                          											</td><td>string
+                          											</td><td>投资目标
+                          											</td></tr>
+                          											<tr>
+                          											<td>tzln
+                          											</td><td>string
+                          											</td><td>投资理念
+                          											</td></tr>
+                          											<tr>
+                          											<td>tzfw
+                          											</td><td>string
+                          											</td><td>投资范围
+                          											</td></tr>
+                          											<tr>
+                          											<td>tzcl
+                          											</td><td>string
+                          											</td><td>投资策略
+                          											</td></tr>
+                          											<tr>
+                          											<td>fhzc
+                          											</td><td>string
+                          											</td><td>分红政策
+                          											</td></tr>
+                          											<tr>
+                          											<td>fxsytz
+                          											</td><td>string
+                          											</td><td>风险收益特征
+                          											</td></tr>
+                          <tr>                                                
+                        
+                      </tr></thead></table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  <!-- 历史净值 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">历史净值</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/lsjz/000001/biyinglicence">http://api.biyingapi.com/jj/lsjz/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/lsjz/000001/biyinglicence">http://api1.biyingapi.com/jj/lsjz/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/lsjz/000001/biyinglicence">http://n.biyingapi.com/jj/lsjz/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/lsjz/000001/biyinglicence">http://b.biyingapi.com/jj/lsjz/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的历史净值，按净值日期降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>dm
+			              											</td><td>string
+			              											</td><td>基金代码
+			              											</td></tr>
+			              											<tr>
+			              											<td>mc
+			              											</td><td>string
+			              											</td><td>基金名称
+			              											</td></tr>
+			              											<tr>
+			              											<td>t
+			              											</td><td>string
+			              											</td><td>净值日期
+			              											</td></tr>
+			              											<tr>
+			              											<td>dwjz
+			              											</td><td>string
+			              											</td><td>单位净值
+			              											</td></tr>
+			              											<tr>
+			              											<td>ljjz
+			              											</td><td>string
+			              											</td><td>累计净值
+			              											</td></tr>
+			              											<tr>
+			              											<td>zzl
+			              											</td><td>string
+			              											</td><td>日增长率
+			              											</td></tr>
+			              											<tr>
+			              											<td>sgzt
+			              											</td><td>string
+			              											</td><td>申购状态
+			              											</td></tr>
+			              											<tr>
+			              											<td>shzt
+			              											</td><td>string
+			              											</td><td>赎回状态
+			              											</td></tr>
+			              											<tr>
+			              											<td>fhsp
+			              											</td><td>string
+			              											</td><td>分红送配
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 分红送配 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">分红送配</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/fhps/000001/biyinglicence">http://api.biyingapi.com/jj/fhps/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/fhps/000001/biyinglicence">http://api1.biyingapi.com/jj/fhps/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/fhps/000001/biyinglicence">http://n.biyingapi.com/jj/fhps/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/fhps/000001/biyinglicence">http://b.biyingapi.com/jj/fhps/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的历史分红送配，按权益登记日降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>dm
+			              											</td><td>string
+			              											</td><td>基金代码
+			              											</td></tr>
+			              											<tr>
+			              											<td>mc
+			              											</td><td>string
+			              											</td><td>基金名称
+			              											</td></tr>
+			              											<tr>
+			              											<td>nf
+			              											</td><td>string
+			              											</td><td>年份
+			              											</td></tr>
+			              											<tr>
+			              											<td>djr
+			              											</td><td>string
+			              											</td><td>权益登记日
+			              											</td></tr>
+			              											<tr>
+			              											<td>cxr
+			              											</td><td>string
+			              											</td><td>除息日
+			              											</td></tr>
+			              											<tr>
+			              											<td>mffh
+			              											</td><td>string
+			              											</td><td>每份分红
+			              											</td></tr>
+			              											<tr>
+			              											<td>ffr
+			              											</td><td>string
+			              											</td><td>分红发放日
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 阶段统计 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">阶段统计</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/jdtj/000001/biyinglicence">http://api.biyingapi.com/jj/jdtj/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/jdtj/000001/biyinglicence">http://api1.biyingapi.com/jj/jdtj/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/jdtj/000001/biyinglicence">http://n.biyingapi.com/jj/jdtj/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/jdtj/000001/biyinglicence">http://b.biyingapi.com/jj/jdtj/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到不同维度（参看下方的“统计维度说明”）的阶段统计。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>jnl
+			              											</td><td>string
+			              											</td><td>今年来
+			              											</td></tr>
+			              											<tr>
+			              											<td>j1w
+			              											</td><td>string
+			              											</td><td>近1周
+			              											</td></tr>
+			              											<tr>
+			              											<td>j1m
+			              											</td><td>string
+			              											</td><td>近1月
+			              											</td></tr>
+			              											<tr>
+			              											<td>j3m
+			              											</td><td>string
+			              											</td><td>近3月
+			              											</td></tr>
+			              											<tr>
+			              											<td>j6m
+			              											</td><td>string
+			              											</td><td>近6月
+			              											</td></tr>
+			              											<tr>
+			              											<td>j1y
+			              											</td><td>string
+			              											</td><td>近1年
+			              											</td></tr>
+			              											<tr>
+			              											<td>j2y
+			              											</td><td>string
+			              											</td><td>近2年
+			              											</td></tr>
+			              											<tr>
+			              											<td>j3y
+			              											</td><td>string
+			              											</td><td>近3年
+			              											</td></tr>
+			              											<tr>
+			              											<td>j5y
+			              											</td><td>string
+			              											</td><td>近5年
+			              											</td></tr>
+			              											<tr>
+			              											<td>cll
+			              											</td><td>string
+			              											</td><td>成立来
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 季度涨幅明细 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">季度涨幅明细</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/jdzfmx/000001/biyinglicence">http://api.biyingapi.com/jj/jdzfmx/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/jdzfmx/000001/biyinglicence">http://api1.biyingapi.com/jj/jdzfmx/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/jdzfmx/000001/biyinglicence">http://n.biyingapi.com/jj/jdzfmx/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/jdzfmx/000001/biyinglicence">http://b.biyingapi.com/jj/jdzfmx/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的季度涨幅明细，按年份降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>y
+			              											</td><td>string
+			              											</td><td>年份
+			              											</td></tr>
+			              											<tr>
+			              											<td>zf1
+			              											</td><td>string
+			              											</td><td>1季度涨幅
+			              											</td></tr>
+			              											<tr>
+			              											<td>zf2
+			              											</td><td>string
+			              											</td><td>2季度涨幅
+			              											</td></tr>
+			              											<tr>
+			              											<td>zf3
+			              											</td><td>string
+			              											</td><td>3季度涨幅
+			              											</td></tr>
+			              											<tr>
+			              											<td>zf4
+			              											</td><td>string
+			              											</td><td>4季度涨幅
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 股票持仓 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">股票持仓</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/gpcc/000001/biyinglicence">http://api.biyingapi.com/jj/gpcc/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/gpcc/000001/biyinglicence">http://api1.biyingapi.com/jj/gpcc/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/gpcc/000001/biyinglicence">http://n.biyingapi.com/jj/gpcc/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/gpcc/000001/biyinglicence">http://b.biyingapi.com/jj/gpcc/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的历年投资股票组合，按截止时间降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>jd
+			              											</td><td>string
+			              											</td><td>季度
+			              											</td></tr>
+			              											<tr>
+			              											<td>t
+			              											</td><td>string
+			              											</td><td>截止时间
+			              											</td></tr>
+			              											<tr>
+			              											<td>dm
+			              											</td><td>string
+			              											</td><td>股票代码
+			              											</td></tr>
+			              											<tr>
+			              											<td>mc
+			              											</td><td>string
+			              											</td><td>股票名称
+			              											</td></tr>
+			              											<tr>
+			              											<td>jzbl
+			              											</td><td>string
+			              											</td><td>占净值比例
+			              											</td></tr>
+			              											<tr>
+			              											<td>cgs
+			              											</td><td>string
+			              											</td><td>持股数（万股）
+			              											</td></tr>
+			              											<tr>
+			              											<td>ccsz
+			              											</td><td>string
+			              											</td><td>持仓市值（万元）
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 债券持仓 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">债券持仓</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/zqcc/000001/biyinglicence">http://api.biyingapi.com/jj/zqcc/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/zqcc/000001/biyinglicence">http://api1.biyingapi.com/jj/zqcc/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/zqcc/000001/biyinglicence">http://n.biyingapi.com/jj/zqcc/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/zqcc/000001/biyinglicence">http://b.biyingapi.com/jj/zqcc/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的历年投资债券持仓，按截止时间降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>jd
+			              											</td><td>string
+			              											</td><td>季度
+			              											</td></tr>
+			              											<tr>
+			              											<td>t
+			              											</td><td>string
+			              											</td><td>截止时间
+			              											</td></tr>
+			              											<tr>
+			              											<td>dm
+			              											</td><td>string
+			              											</td><td>债券代码
+			              											</td></tr>
+			              											<tr>
+			              											<td>mc
+			              											</td><td>string
+			              											</td><td>债券名称
+			              											</td></tr>
+			              											<tr>
+			              											<td>jzbl
+			              											</td><td>string
+			              											</td><td>占净值比例
+			              											</td></tr>
+			              											<tr>
+			              											<td>ccsz
+			              											</td><td>string
+			              											</td><td>持仓市值（万元）
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 行业配置 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">行业配置</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/hypz/000001/biyinglicence">http://api.biyingapi.com/jj/hypz/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/hypz/000001/biyinglicence">http://api1.biyingapi.com/jj/hypz/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/hypz/000001/biyinglicence">http://n.biyingapi.com/jj/hypz/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/hypz/000001/biyinglicence">http://b.biyingapi.com/jj/hypz/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的历年行业配置情况，按截止时间降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>jd
+			              											</td><td>string
+			              											</td><td>季度
+			              											</td></tr>
+			              											<tr>
+			              											<td>t
+			              											</td><td>string
+			              											</td><td>截止时间
+			              											</td></tr>
+			              											<tr>
+			              											<td>hy
+			              											</td><td>string
+			              											</td><td>行业类别
+			              											</td></tr>
+			              											<tr>
+			              											<td>jzbl
+			              											</td><td>string
+			              											</td><td>占净值比例
+			              											</td></tr>
+			              											<tr>
+			              											<td>ccsz
+			              											</td><td>string
+			              											</td><td>持仓市值（万元）
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 资产配置 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">资产配置</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/zcpz/000001/biyinglicence">http://api.biyingapi.com/jj/zcpz/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/zcpz/000001/biyinglicence">http://api1.biyingapi.com/jj/zcpz/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/zcpz/000001/biyinglicence">http://n.biyingapi.com/jj/zcpz/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/zcpz/000001/biyinglicence">http://b.biyingapi.com/jj/zcpz/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的历年资产配置情况，按报告期降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>t
+			              											</td><td>string
+			              											</td><td>报告期
+			              											</td></tr>
+			              											<tr>
+			              											<td>gpzjb
+			              											</td><td>string
+			              											</td><td>股票占净比
+			              											</td></tr>
+			              											<tr>
+			              											<td>zqzjb
+			              											</td><td>string
+			              											</td><td>债券占净比
+			              											</td></tr>
+			              											<tr>
+			              											<td>xjzjb
+			              											</td><td>string
+			              											</td><td>现金占净比
+			              											</td></tr>
+			              											<tr>
+			              											<td>jzc
+			              											</td><td>string
+			              											</td><td>净资产（亿元）
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 规模变动 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">规模变动</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/gmbd/000001/biyinglicence">http://api.biyingapi.com/jj/gmbd/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/gmbd/000001/biyinglicence">http://api1.biyingapi.com/jj/gmbd/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/gmbd/000001/biyinglicence">http://n.biyingapi.com/jj/gmbd/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/gmbd/000001/biyinglicence">http://b.biyingapi.com/jj/gmbd/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的历年的规模变动，按日期降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>t
+			              											</td><td>string
+			              											</td><td>日期
+			              											</td></tr>
+			              											<tr>
+			              											<td>qjsg
+			              											</td><td>string
+			              											</td><td>期间申购（亿份）
+			              											</td></tr>
+			              											<tr>
+			              											<td>qjsh
+			              											</td><td>string
+			              											</td><td>期间赎回（亿份）
+			              											</td></tr>
+			              											<tr>
+			              											<td>qmzfe
+			              											</td><td>string
+			              											</td><td>期末总份额（亿份）
+			              											</td></tr>
+			              											<tr>
+			              											<td>qmjzc
+			              											</td><td>string
+			              											</td><td>期末净资产（亿元）
+			              											</td></tr>
+			              											<tr>
+			              											<td>zcbdl
+			              											</td><td>string
+			              											</td><td>净资产变动率
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 持有人结构 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">持有人结构</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/cyrjg/000001/biyinglicence">http://api.biyingapi.com/jj/cyrjg/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/cyrjg/000001/biyinglicence">http://api1.biyingapi.com/jj/cyrjg/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/cyrjg/000001/biyinglicence">http://n.biyingapi.com/jj/cyrjg/基金代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/cyrjg/000001/biyinglicence">http://b.biyingapi.com/jj/cyrjg/基金代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的历年的持有人结构变化，按公告日期降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>t
+			              											</td><td>string
+			              											</td><td>公告日期
+			              											</td></tr>
+			              											<tr>
+			              											<td>jgbl
+			              											</td><td>string
+			              											</td><td>机构持有比例
+			              											</td></tr>
+			              											<tr>
+			              											<td>grbl
+			              											</td><td>string
+			              											</td><td>个人持有比例
+			              											</td></tr>
+			              											<tr>
+			              											<td>nbbl
+			              											</td><td>string
+			              											</td><td>内部持有比例
+			              											</td></tr>
+			              											<tr>
+			              											<td>zfe
+			              											</td><td>string
+			              											</td><td>总份额（亿份）
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 收入分析 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">收入分析</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/srfx/006149/biyinglicence">http://api.biyingapi.com/jj/srfx/基金代码/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/srfx/006149/biyinglicence">http://api1.biyingapi.com/jj/srfx/基金代码/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/srfx/006149/biyinglicence">http://n.biyingapi.com/jj/srfx/基金代码/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/srfx/006149/biyinglicence">http://b.biyingapi.com/jj/srfx/基金代码/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的历年的收入组成分析，按报告期降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>t
+			              											</td><td>string
+			              											</td><td>报告期
+			              											</td></tr>
+			              											<tr>
+			              											<td>srhj
+			              											</td><td>string
+			              											</td><td>收入合计
+			              											</td></tr>
+			              											<tr>
+			              											<td>gpsr
+			              											</td><td>string
+			              											</td><td>股票收入
+			              											</td></tr>
+			              											<tr>
+			              											<td>gpsrzb
+			              											</td><td>string
+			              											</td><td>股票收入占比
+			              											</td></tr>
+			              											<tr>
+			              											<td>zqsr
+			              											</td><td>string
+			              											</td><td>债券收入
+			              											</td></tr>
+			              											<tr>
+			              											<td>zqsrzb
+			              											</td><td>string
+			              											</td><td>债券收入占比
+			              											</td></tr>
+			              											<tr>
+			              											<td>gxsr
+			              											</td><td>string
+			              											</td><td>股息收入
+			              											</td></tr>
+			              											<tr>
+			              											<td>gxsrzb
+			              											</td><td>string
+			              											</td><td>股息收入占比
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 费用分析 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">费用分析</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/fyfx/006149/biyinglicence">http://api.biyingapi.com/jj/fyfx/基金代码/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/fyfx/006149/biyinglicence">http://api1.biyingapi.com/jj/fyfx/基金代码/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/fyfx/006149/biyinglicence">http://n.biyingapi.com/jj/fyfx/基金代码/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/fyfx/006149/biyinglicence">http://b.biyingapi.com/jj/fyfx/基金代码/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的历年的费用组成分析，按报告期降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>t
+			              											</td><td>string
+			              											</td><td>报告期
+			              											</td></tr>
+			              											<tr>
+			              											<td>fyhj
+			              											</td><td>string
+			              											</td><td>费用合计
+			              											</td></tr>
+			              											<tr>
+			              											<td>glrbc
+			              											</td><td>string
+			              											</td><td>管理人报酬
+			              											</td></tr>
+			              											<tr>
+			              											<td>glrbczb
+			              											</td><td>string
+			              											</td><td>管理人报酬占比
+			              											</td></tr>
+			              											<tr>
+			              											<td>tgf
+			              											</td><td>string
+			              											</td><td>托管费
+			              											</td></tr>
+			              											<tr>
+			              											<td>tgfzb
+			              											</td><td>string
+			              											</td><td>托管费占比
+			              											</td></tr>
+			              											<tr>
+			              											<td>jyf
+			              											</td><td>string
+			              											</td><td>交易费
+			              											</td></tr>
+			              											<tr>
+			              											<td>jyfzb
+			              											</td><td>string
+			              											</td><td>交易费占比
+			              											</td></tr>
+			              											<tr>
+			              											<td>xsfwf
+			              											</td><td>string
+			              											</td><td>销售服务费
+			              											</td></tr>
+			              											<tr>
+			              											<td>xsfwfzb
+			              											</td><td>string
+			              											</td><td>销售服务费占比
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 主要财务指标 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">主要财务指标</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/cwzb/006149/biyinglicence">http://api.biyingapi.com/jj/cwzb/基金代码/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/cwzb/006149/biyinglicence">http://api1.biyingapi.com/jj/cwzb/基金代码/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/cwzb/006149/biyinglicence">http://n.biyingapi.com/jj/cwzb/基金代码/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/cwzb/006149/biyinglicence">http://b.biyingapi.com/jj/cwzb/基金代码/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的历年的主要财务指标，按报告期降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>t
+			              											</td><td>string
+			              											</td><td>报告期
+			              											</td></tr>
+			              											<tr>
+			              											<td>bcys
+			              											</td><td>string
+			              											</td><td>本期已实现收益（元）
+			              											</td></tr>
+			              											<tr>
+			              											<td>bclr
+			              											</td><td>string
+			              											</td><td>本期利润（元）
+			              											</td></tr>
+			              											<tr>
+			              											<td>jqlr
+			              											</td><td>string
+			              											</td><td>加权平均基金份额本期利润
+			              											</td></tr>
+			              											<tr>
+			              											<td>jqlrl
+			              											</td><td>string
+			              											</td><td>本期加权平均净值利润率
+			              											</td></tr>
+			              											<tr>
+			              											<td>jqzzl
+			              											</td><td>string
+			              											</td><td>本期基金份额净值增长率
+			              											</td></tr>
+			              											<tr>
+			              											<td>qmfplr
+			              											</td><td>string
+			              											</td><td>期末可供分配利润（元）
+			              											</td></tr>
+			              											<tr>
+			              											<td>qmfelr
+			              											</td><td>string
+			              											</td><td>期末可供分配基金份额利润
+			              											</td></tr>
+			              											<tr>
+			              											<td>qmzcjz
+			              											</td><td>string
+			              											</td><td>期末基金资产净值
+			              											</td></tr>
+			              											<tr>
+			              											<td>qmfejz
+			              											</td><td>string
+			              											</td><td>期末基金份额净值
+			              											</td></tr>
+			              											<tr>
+			              											<td>ljzzl
+			              											</td><td>string
+			              											</td><td>基金份额累计净值增长率
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 利润表 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">利润表</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/lrb/006149/biyinglicence">http://api.biyingapi.com/jj/lrb/基金代码/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/lrb/006149/biyinglicence">http://api1.biyingapi.com/jj/lrb/基金代码/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/lrb/006149/biyinglicence">http://n.biyingapi.com/jj/lrb/基金代码/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/lrb/006149/biyinglicence">http://b.biyingapi.com/jj/lrb/基金代码/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的历年的利润表，按报告期降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>t
+			              											</td><td>string
+			              											</td><td>报告期
+			              											</td></tr>
+			              											<tr>
+			              											<td>zsr
+			              											</td><td>string
+			              											</td><td>总收入
+			              											</td></tr>
+			              											<tr>
+			              											<td>zlxsr
+			              											</td><td>string
+			              											</td><td>总利息收入
+			              											</td></tr>
+			              											<tr>
+			              											<td>cklxsr
+			              											</td><td>string
+			              											</td><td>存款利息收入
+			              											</td></tr>
+			              											<tr>
+			              											<td>zqlxsr
+			              											</td><td>string
+			              											</td><td>债券利息收入
+			              											</td></tr>
+			              											<tr>
+			              											<td>zclxsr
+			              											</td><td>string
+			              											</td><td>资产支持证券利息收入
+			              											</td></tr>
+			              											<tr>
+			              											<td>ztzsy
+			              											</td><td>string
+			              											</td><td>总投资收益
+			              											</td></tr>
+			              											<tr>
+			              											<td>gptzsy
+			              											</td><td>string
+			              											</td><td>股票投资收益
+			              											</td></tr>
+			              											<tr>
+			              											<td>jjtzsy
+			              											</td><td>string
+			              											</td><td>基金投资收益
+			              											</td></tr>
+			              											<tr>
+			              											<td>zqtzsy
+			              											</td><td>string
+			              											</td><td>债券投资收益
+			              											</td></tr>
+			              											<tr>
+			              											<td>zczqtzsy
+			              											</td><td>string
+			              											</td><td>资产支持证券投资收益
+			              											</td></tr>
+			              											<tr>
+			              											<td>ysgjsy
+			              											</td><td>string
+			              											</td><td>衍生工具收益
+			              											</td></tr>
+			              											<tr>
+			              											<td>glsy
+			              											</td><td>string
+			              											</td><td>股利收益
+			              											</td></tr>
+			              											<tr>
+			              											<td>gyjzbdsy
+			              											</td><td>string
+			              											</td><td>公允价值变动收益
+			              											</td></tr>
+			              											<tr>
+			              											<td>hdsy
+			              											</td><td>string
+			              											</td><td>汇兑收益
+			              											</td></tr>
+			              											<tr>
+			              											<td>qtsr
+			              											</td><td>string
+			              											</td><td>其他收入
+			              											</td></tr>
+			              											<tr>
+			              											<td>zfy
+			              											</td><td>string
+			              											</td><td>总费用
+			              											</td></tr>
+			              											<tr>
+			              											<td>glrbc
+			              											</td><td>string
+			              											</td><td>管理人报酬
+			              											</td></tr>
+			              											<tr>
+			              											<td>tgf
+			              											</td><td>string
+			              											</td><td>托管费
+			              											</td></tr>
+			              											<tr>
+			              											<td>jyfy
+			              											</td><td>string
+			              											</td><td>交易费用
+			              											</td></tr>
+			              											<tr>
+			              											<td>lxzc
+			              											</td><td>string
+			              											</td><td>利息支出
+			              											</td></tr>
+			              											<tr>
+			              											<td>jrzczc
+			              											</td><td>string
+			              											</td><td>卖出回购金融资产支出
+			              											</td></tr>
+			              											<tr>
+			              											<td>qtfy
+			              											</td><td>string
+			              											</td><td>其他费用
+			              											</td></tr>
+			              											<tr>
+			              											<td>lrze
+			              											</td><td>string
+			              											</td><td>利润总额
+			              											</td></tr>
+			              											<tr>
+			              											<td>sdsfy
+			              											</td><td>string
+			              											</td><td>所得税费用
+			              											</td></tr>
+			              											<tr>
+			              											<td>jlr
+			              											</td><td>string
+			              											</td><td>净利润
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 资产负债表 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">资产负债表</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/zcfzb/006149/biyinglicence">http://api.biyingapi.com/jj/zcfzb/基金代码/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/zcfzb/006149/biyinglicence">http://api1.biyingapi.com/jj/zcfzb/基金代码/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/zcfzb/006149/biyinglicence">http://n.biyingapi.com/jj/zcfzb/基金代码/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/zcfzb/006149/biyinglicence">http://b.biyingapi.com/jj/zcfzb/基金代码/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《所有基金列表》得到的基金代码作为参数得到该基金的历年的资产负债表，按报告期降序。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>t
+			              											</td><td>string
+			              											</td><td>报告期
+			              											</td></tr>
+			              											<tr>
+			              											<td>yhck
+			              											</td><td>string
+			              											</td><td>银行存款
+			              											</td></tr>
+			              											<tr>
+			              											<td>jsbfj
+			              											</td><td>string
+			              											</td><td>结算备付金
+			              											</td></tr>
+			              											<tr>
+			              											<td>ccbzj
+			              											</td><td>string
+			              											</td><td>存出保证金
+			              											</td></tr>
+			              											<tr>
+			              											<td>jyxjrzc
+			              											</td><td>string
+			              											</td><td>交易性金融资产
+			              											</td></tr>
+			              											<tr>
+			              											<td>gptz
+			              											</td><td>string
+			              											</td><td>其中：股票投资
+			              											</td></tr>
+			              											<tr>
+			              											<td>jjtz
+			              											</td><td>string
+			              											</td><td>其中：基金投资
+			              											</td></tr>
+			              											<tr>
+			              											<td>zqtz
+			              											</td><td>string
+			              											</td><td>其中：债券投资
+			              											</td></tr>
+			              											<tr>
+			              											<td>zczqtz
+			              											</td><td>string
+			              											</td><td>其中：资产支持证券投资
+			              											</td></tr>
+			              											<tr>
+			              											<td>ysjrzc
+			              											</td><td>string
+			              											</td><td>衍生金融资产
+			              											</td></tr>
+			              											<tr>
+			              											<td>mrjrzc
+			              											</td><td>string
+			              											</td><td>买入返售金融资产
+			              											</td></tr>
+			              											<tr>
+			              											<td>ysjqk
+			              											</td><td>string
+			              											</td><td>应收证券清算款
+			              											</td></tr>
+			              											<tr>
+			              											<td>yslx
+			              											</td><td>string
+			              											</td><td>应收利息
+			              											</td></tr>
+			              											<tr>
+			              											<td>ysgl
+			              											</td><td>string
+			              											</td><td>应收股利
+			              											</td></tr>
+			              											<tr>
+			              											<td>yssgk
+			              											</td><td>string
+			              											</td><td>应收申购款
+			              											</td></tr>
+			              											<tr>
+			              											<td>dysdtzc
+			              											</td><td>string
+			              											</td><td>递延所得税资产
+			              											</td></tr>
+			              											<tr>
+			              											<td>qtzc
+			              											</td><td>string
+			              											</td><td>其他资产
+			              											</td></tr>
+			              											<tr>
+			              											<td>zczj
+			              											</td><td>string
+			              											</td><td>资产总计
+			              											</td></tr>
+			              											<tr>
+			              											<td>dqjz
+			              											</td><td>string
+			              											</td><td>短期借款
+			              											</td></tr>
+			              											<tr>
+			              											<td>jyxjrfz
+			              											</td><td>string
+			              											</td><td>交易性金融负债
+			              											</td></tr>
+			              											<tr>
+			              											<td>ysjrfz
+			              											</td><td>string
+			              											</td><td>衍生金融负债
+			              											</td></tr>
+			              											<tr>
+			              											<td>mchgjrzc
+			              											</td><td>string
+			              											</td><td>卖出回购金融资产款
+			              											</td></tr>
+			              											<tr>
+			              											<td>yfzcqsk
+			              											</td><td>string
+			              											</td><td>应付证券清算款
+			              											</td></tr>
+			              											<tr>
+			              											<td>yfshk
+			              											</td><td>string
+			              											</td><td>应付赎回款
+			              											</td></tr>
+			              											<tr>
+			              											<td>yfglrbc
+			              											</td><td>string
+			              											</td><td>应付管理人报酬
+			              											</td></tr>
+			              											<tr>
+			              											<td>yftgf
+			              											</td><td>string
+			              											</td><td>应付托管费
+			              											</td></tr>
+			              											<tr>
+			              											<td>yfxffwf
+			              											</td><td>string
+			              											</td><td>应付销售服务费
+			              											</td></tr>
+			              											<tr>
+			              											<td>yfsf
+			              											</td><td>string
+			              											</td><td>应付税费
+			              											</td></tr>
+			              											<tr>
+			              											<td>fylx
+			              											</td><td>string
+			              											</td><td>应付利息
+			              											</td></tr>
+			              											<tr>
+			              											<td>yslr
+			              											</td><td>string
+			              											</td><td>应收利润
+			              											</td></tr>
+			              											<tr>
+			              											<td>dysdsfz
+			              											</td><td>string
+			              											</td><td>递延所得税负债
+			              											</td></tr>
+			              											<tr>
+			              											<td>qtfz
+			              											</td><td>string
+			              											</td><td>其他负债
+			              											</td></tr>
+			              											<tr>
+			              											<td>fzhj
+			              											</td><td>string
+			              											</td><td>负债合计
+			              											</td></tr>
+			              											<tr>
+			              											<td>ssjj
+			              											</td><td>string
+			              											</td><td>实收基金
+			              											</td></tr>
+			              											<tr>
+			              											<td>syzqyhj
+			              											</td><td>string
+			              											</td><td>所有者权益合计
+			              											</td></tr>
+			              											<tr>
+			              											<td>fzfyzqyhj
+			              											</td><td>string
+			              											</td><td>负债和所有者权益合计
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 在任基金经理列表 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">在任基金经理列表</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/zrjl/biyinglicence">http://api.biyingapi.com/jj/zrjl/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/zrjl/biyinglicence">http://api1.biyingapi.com/jj/zrjl/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/zrjl/biyinglicence">http://n.biyingapi.com/jj/zrjl/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/zrjl/biyinglicence">http://b.biyingapi.com/jj/zrjl/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：获取所有在任的基金经理。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>mz
+			              											</td><td>string
+			              											</td><td>基金经理名字
+			              											</td></tr>
+			              											<tr>
+			              											<td>jlid
+			              											</td><td>string
+			              											</td><td>基金经理代码
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 在任基金经理简介 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">在任基金经理简介</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/jljj/30112276/biyinglicence">http://api.biyingapi.com/jj/jljj/经理代码/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/jljj/30112276/biyinglicence">http://api1.biyingapi.com/jj/jljj/经理代码/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/jljj/30112276/biyinglicence">http://n.biyingapi.com/jj/jljj/经理代码/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/jljj/30112276/biyinglicence">http://b.biyingapi.com/jj/jljj/经理代码/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《在任基金经理列表》得到的基金经理代码获取基金经理简介。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>mz
+			              											</td><td>string
+			              											</td><td>基金经理名字
+			              											</td></tr>
+			              											<tr>
+			              											<td>jlid
+			              											</td><td>string
+			              											</td><td>基金经理代码
+			              											</td></tr>
+			              											<tr>
+			              											<td>ljrz
+			              											</td><td>string
+			              											</td><td>累计任职时间
+			              											</td></tr>
+			              											<tr>
+			              											<td>rzqs
+			              											</td><td>string
+			              											</td><td>任职起始日期
+			              											</td></tr>
+			              											<tr>
+			              											<td>xrjjgs
+			              											</td><td>string
+			              											</td><td>现任基金公司
+			              											</td></tr>
+			              											<tr>
+			              											<td>xrjjgm
+			              											</td><td>string
+			              											</td><td>现任基金资产总规模
+			              											</td></tr>
+			              											<tr>
+			              											<td>zjhb
+			              											</td><td>string
+			              											</td><td>任职期间最佳基金回报
+			              											</td></tr>
+			              											<tr>
+			              											<td>jj
+			              											</td><td>string
+			              											</td><td>简介
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 管理过的基金一览 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">管理过的基金一览</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/glgjj/30112276/biyinglicence">http://api.biyingapi.com/jj/glgjj/经理代码/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/glgjj/30112276/biyinglicence">http://api1.biyingapi.com/jj/glgjj/经理代码/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/glgjj/30112276/biyinglicence">http://n.biyingapi.com/jj/glgjj/经理代码/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/glgjj/30112276/biyinglicence">http://b.biyingapi.com/jj/glgjj/经理代码/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《在任基金经理列表》得到的基金经理代码获取基金经理管理过的基金收益情况。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>dm
+			              											</td><td>string
+			              											</td><td>基金代码
+			              											</td></tr>
+			              											<tr>
+			              											<td>mc
+			              											</td><td>string
+			              											</td><td>基金名称
+			              											</td></tr>
+			              											<tr>
+			              											<td>lx
+			              											</td><td>string
+			              											</td><td>基金类型
+			              											</td></tr>
+			              											<tr>
+			              											<td>gm
+			              											</td><td>string
+			              											</td><td>规模（亿元）
+			              											</td></tr>
+			              											<tr>
+			              											<td>rzsj
+			              											</td><td>string
+			              											</td><td>任职时间
+			              											</td></tr>
+			              											<tr>
+			              											<td>rzts
+			              											</td><td>string
+			              											</td><td>任职天数
+			              											</td></tr>
+			              											<tr>
+			              											<td>rzhb
+			              											</td><td>string
+			              											</td><td>任职回报
+			              											</td></tr>
+			              											<tr>
+			              											<td>
+			              											</td><td>
+			              											</td><td>
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 现任基金业绩与排名详情 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">现任基金业绩与排名详情</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/jj/xrjj/30112276/biyinglicence">http://api.biyingapi.com/jj/xrjj/经理代码/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/jj/xrjj/30112276/biyinglicence">http://api1.biyingapi.com/jj/xrjj/经理代码/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/jj/xrjj/30112276/biyinglicence">http://n.biyingapi.com/jj/xrjj/经理代码//您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/jj/xrjj/30112276/biyinglicence">http://b.biyingapi.com/jj/xrjj/经理代码//您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《在任基金经理列表》得到的基金经理代码获取基金经理现在管理的基金收益情况。</p>
+			  					<p class="card-description2"> 数据更新：每周六早上6点更新</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>											
+			              											<tr>
+			              											<td>dm
+			              											</td><td>string
+			              											</td><td>基金代码
+			              											</td></tr>
+			              											<tr>
+			              											<td>mc
+			              											</td><td>string
+			              											</td><td>基金名称
+			              											</td></tr>
+			              											<tr>
+			              											<td>lx
+			              											</td><td>string
+			              											</td><td>基金类型
+			              											</td></tr>
+			              											<tr>
+			              											<td>j3m
+			              											</td><td>string
+			              											</td><td>近三月
+			              											</td></tr>
+			              											<tr>
+			              											<td>j3mpm
+			              											</td><td>string
+			              											</td><td>近三月同类排名
+			              											</td></tr>
+			              											<tr>
+			              											<td>j6m
+			              											</td><td>string
+			              											</td><td>近六月
+			              											</td></tr>
+			              											<tr>
+			              											<td>j6mpm
+			              											</td><td>string
+			              											</td><td>近六月同类排名
+			              											</td></tr>
+			              											<tr>
+			              											<td>j1y
+			              											</td><td>string
+			              											</td><td>近一年
+			              											</td></tr>
+			              											<tr>
+			              											<td>j1ypm
+			              											</td><td>string
+			              											</td><td>近一年同类排名
+			              											</td></tr>
+			              											<tr>
+			              											<td>j2y
+			              											</td><td>string
+			              											</td><td>近两年
+			              											</td></tr>
+			              											<tr>
+			              											<td>j2ypm
+			              											</td><td>string
+			              											</td><td>近两年同类排名
+			              											</td></tr>
+			              											<tr>
+			              											<td>jnl
+			              											</td><td>string
+			              											</td><td>今年来
+			              											</td></tr>
+			              											<tr>
+			              											<td>jnlpm
+			              											</td><td>string
+			              											</td><td>今年来同类排名
+			              											</td></tr>
+			              <tr>                                                
+			            
+			          </tr></thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  
+		      <!-- 这里就是要修改的地方 -->
+			  
+			  
+             
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              Copyright © 2018-2024 必盈网络科技服务有限公司
+            </div>
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+			  客服电话：184-3512-8452&nbsp;&nbsp;&nbsp;&nbsp;客服微信ID：biyingapiclient
+			</div>
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+							<a target="_blank" href="https://beian.miit.gov.cn/">网站备案号：晋ICP备2023021176号</a>
+
+			</div>
+			
+			<div class="d-sm-flex justify-content-center justify-content-sm-between" style="color: red;">
+			       风险提示：本站所有免费及收费信息和数据仅供参考，不构成投资建议，本站不承担由此导致的任何法律责任。
+			</div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="static/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="static/js/off-canvas.js"></script>
+    <script src="static/js/hoverable-collapse.js"></script>
+    <script src="static/js/misc.js"></script>
+    <script src="static/js/settings.js"></script>
+    <script src="static/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+  
+</body></html>

@@ -1,0 +1,1768 @@
+<!DOCTYPE html><html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>API文档 | 必盈API | 金融数据服务</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="static/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="static/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+    <!-- End layout styles -->
+	<script src="https://hm.baidu.com/hm.js?a525b3a8ede698e09c51bfa27ecf323e"></script><script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?a525b3a8ede698e09c51bfa27ecf323e";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+   
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="http://www.biyingapi.com"><img src="static/picture/logo.png" alt="logo"></a>
+          <a class="sidebar-brand brand-logo-mini" href="http://www.biyingapi.com"><img src="static/picture/logomini.png" alt="logo"></a>
+        </div>
+		
+		
+        <ul class="nav">
+ 
+          <li class="nav-item nav-category">
+            <span class="nav-link">API文档</span>	
+						
+						
+						
+						
+			</li><li class="nav-item menu-items active">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic1" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>							
+			    <span class="menu-title">沪深基础数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse show" id="ui-basic1">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="hslb.html">沪深股票列表</a></li>
+			      <li class="nav-item"> <a class="nav-link active" href="gsxq.html">公司详情</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="zjl.html">资金流</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zdgc.html">涨跌股池</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="rzrq.html">融资融券</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zsgn.html">指数、行业、概念</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="ssjy.html">实时交易</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zxsj.html">最新交易数据</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="lssj.html">历史交易数据</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">沪深分析数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic2">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="tzck.html">投资参考</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="lhb.html">龙虎榜</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="scbx.html">市场表现</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="cwfx.html">财务分析</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="jgcg.html">机构持股</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="bkzj.html">板块资金流向</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="ggzj.html">个股资金流向</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zjlx.html">资金线路图</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic3" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">沪深指数数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic3">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="hzlb.html">沪深指数列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="hzss.html">实时数据</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="zsjy.html">最新交易数据</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="lsjy.html">历史交易数据</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic4" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">基金行情数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic4">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="jjlb.html">基金列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="gzhq.html">估值行情</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="jszb.html">技术指标</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="daxx.html">档案信息</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			
+       
+        </ul>
+      
+	  
+	  </nav>
+	  
+	  
+	  
+	  
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="static/picture/logomini.png" alt="logo"></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+ 
+			
+			
+			<button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+			  
+			  
+			  
+          
+            
+			
+			
+			
+			<div class="row">
+				
+		       <!-- 公司简介 -->
+				
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title2">公司简介</h4>
+                    <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/gsjj/000001/biyinglicence">http://api.biyingapi.com/hscp/gsjj/股票代码(如000001)/您的licence</a></p>
+					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/gsjj/000001/biyinglicence">http://api1.biyingapi.com/hscp/gsjj/股票代码(如000001)/您的licence</a></p>
+					<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/gsjj/000001/biyinglicence">http://n.biyingapi.com/hscp/gsjj/股票代码(如000001)/您的licence</a></p>
+					<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/gsjj/000001/biyinglicence">http://b.biyingapi.com/hscp/gsjj/股票代码(如000001)/您的licence</a></p>
+					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司的简介。包括公司基本信息，概念以及发行信息等。</p>
+					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+                    <p></p>
+                    <div class="table-responsive">
+                      <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th> 字段名称 </th>
+                            <th> 数据类型 </th>
+                            <th> 字段说明 </th>                           
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td> name </td>
+                            <td> string </td>
+                            <td> 公司名称 </td>                            
+                          </tr>
+                          <tr>
+                            <td> ename </td>
+                            <td> string </td>
+                            <td> 公司英文名称 </td>   
+                          </tr>
+                          <tr>
+                            <td> market </td>
+                            <td> string </td>
+                            <td> 上市市场 </td>   
+                          </tr>
+						  <tr>
+						    <td> idea </td>
+						    <td> string </td>
+						    <td> 概念及板块，多个概念由英文逗号分隔 </td>   
+						  </tr><tr>
+                            <td> ldate </td>
+                            <td> string </td>
+                            <td> 上市日期，格式yyyy-MM-dd </td>   
+                          </tr><tr>
+                            <td> sprice </td>
+                            <td> string </td>
+                            <td> 发行价格（元） </td>   
+                          </tr><tr>
+                            <td> principal </td>
+                            <td> string </td>
+                            <td> 主承销商 </td>   
+                          </tr><tr>
+                            <td> rdate </td>
+                            <td> string </td>
+                            <td> 成立日期 </td>   
+                          </tr><tr>
+                            <td> rprice </td>
+                            <td> string </td>
+                            <td> 注册资本 </td>   
+                          </tr><tr>
+                            <td> instype </td>
+                            <td> string </td>
+                            <td> 机构类型 </td>   
+                          </tr><tr>
+                            <td> organ </td>
+                            <td> string </td>
+                            <td> 组织形式 </td>   
+                          </tr><tr>
+                            <td> secre </td>
+                            <td> string </td>
+                            <td> 董事会秘书 </td>   
+                          </tr><tr>
+                            <td> phone </td>
+                            <td> string </td>
+                            <td> 公司电话 </td>   
+                          </tr><tr>
+                            <td> sphone </td>
+                            <td> string </td>
+                            <td> 董秘电话 </td>   
+                          </tr><tr>
+                            <td> fax </td>
+                            <td> string </td>
+                            <td> 公司传真 </td>   
+                          </tr><tr>
+                            <td> sfax </td>
+                            <td> string </td>
+                            <td> 董秘传真 </td>   
+                          </tr><tr>
+                            <td> email </td>
+                            <td> string </td>
+                            <td> 公司电子邮箱 </td>   
+                          </tr><tr>
+                            <td> semail </td>
+                            <td> string </td>
+                            <td> 董秘电子邮箱 </td>   
+                          </tr><tr>
+                            <td> site </td>
+                            <td> string </td>
+                            <td> 公司网站 </td>   
+                          </tr><tr>
+                            <td> post </td>
+                            <td> string </td>
+                            <td> 邮政编码 </td>   
+                          </tr><tr>
+                            <td> infosite </td>
+                            <td> string </td>
+                            <td> 信息披露网址 </td>   
+                          </tr><tr>
+                            <td> oname </td>
+                            <td> string </td>
+                            <td> 证券简称更名历史 </td>   
+                          </tr><tr>
+                            <td> addr </td>
+                            <td> string </td>
+                            <td> 注册地址 </td>   
+                          </tr><tr>
+                            <td> oaddr </td>
+                            <td> string </td>
+                            <td> 办公地址 </td>   
+                          </tr><tr>
+                            <td> desc </td>
+                            <td> string </td>
+                            <td> 公司简介 </td>   
+                          </tr><tr>
+                            <td> bscope </td>
+                            <td> string </td>
+                            <td> 经营范围 </td>   
+                          </tr><tr>
+                            <td> printype </td>
+                            <td> string </td>
+                            <td> 承销方式 </td>   
+                          </tr><tr>
+                            <td> referrer </td>
+                            <td> string </td>
+                            <td>上市推荐人 </td>   
+                          </tr><tr>
+                            <td> putype </td>
+                            <td> string </td>
+                            <td> 发行方式 </td>   
+                          </tr><tr>
+                            <td> pe </td>
+                            <td> string </td>
+                            <td> 发行市盈率（按发行后总股本） </td>   
+                          </tr><tr>
+                            <td> firgu </td>
+                            <td> string </td>
+                            <td> 首发前总股本（万股） </td>   
+                          </tr><tr>
+                            <td> lastgu </td>
+                            <td> string </td>
+                            <td> 首发后总股本（万股） </td>   
+                          </tr><tr>
+                            <td> realgu </td>
+                            <td> string </td>
+                            <td> 实际发行量（万股） </td>   
+                          </tr><tr>
+                            <td> planm </td>
+                            <td> string </td>
+                            <td> 预计募集资金（万元） </td>   
+                          </tr>
+						  <tr>
+						    <td> realm </td>
+						    <td> string </td>
+						    <td> 实际募集资金合计（万元） </td>   
+						  </tr><tr>
+                            <td> pubfee </td>
+                            <td> string </td>
+                            <td> 发行费用总额（万元） </td>   
+                          </tr>
+						  <tr>
+						    <td> collect </td>
+						    <td> string </td>
+						    <td> 募集资金净额（万元） </td>   
+						  </tr><tr>
+                            <td> signfee </td>
+                            <td> string </td>
+                            <td> 承销费用（万元） </td>   
+                          </tr><tr>
+                            <td> pdate </td>
+                            <td> string </td>
+                            <td> 招股公告日 </td>   
+                          </tr>
+						  
+                          <tr>                                                
+                        </tr></tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  
+		      <!-- 所属指数 -->
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">所属指数</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/sszs/000001/biyinglicence">http://api.biyingapi.com/hscp/sszs/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/sszs/000001/biyinglicence">http://api1.biyingapi.com/hscp/sszs/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/sszs/000001/biyinglicence">http://n.biyingapi.com/hscp/sszs/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/sszs/000001/biyinglicence">http://b.biyingapi.com/hscp/sszs/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司的所属指数。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> mc </td>
+			                <td> string </td>
+			                <td> 指数名称 </td>                            
+			              </tr>
+			              <tr>
+			                <td> dm </td>
+			                <td> string </td>
+			                <td> 指数代码 </td>   
+			              </tr>
+						  <tr>
+						    <td> ind </td>
+						    <td> string </td>
+						    <td> 进入日期yyyy-MM-dd </td>   
+						  </tr><tr>
+			                <td> outd </td>
+			                <td> string </td>
+			                <td> 退出日期yyyy-MM-dd </td>   
+			              
+			  						  
+			              </tr><tr>                                                
+			            </tr></tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 历届高管成员 -->
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">历届高管成员</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/ljgg/000001/biyinglicence">http://api.biyingapi.com/hscp/ljgg/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/ljgg/000001/biyinglicence">http://api1.biyingapi.com/hscp/ljgg/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/ljgg/000001/biyinglicence">http://n.biyingapi.com/hscp/ljgg/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/ljgg/000001/biyinglicence">http://b.biyingapi.com/hscp/ljgg/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司的历届高管成员名单。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> name </td>
+			                <td> string </td>
+			                <td> 姓名 </td>                            
+			              </tr>
+			              <tr>
+			                <td> title </td>
+			                <td> string </td>
+			                <td> 职务 </td>                            
+			              </tr>
+							<tr>
+							  <td> sdate </td>
+							  <td> string </td>
+							  <td> 起始日期yyyy-MM-dd </td>                            
+							</tr>
+							<tr>
+							  <td> edate </td>
+							  <td> string </td>
+							  <td> 终止日期yyyy-MM-dd </td>                            
+							</tr>
+			              
+			  						  
+			              <tr>                                                
+			            </tr></tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 历届董事会成员 -->
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">历届董事会成员</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/ljds/000001/biyinglicence">http://api.biyingapi.com/hscp/ljds/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/ljds/000001/biyinglicence">http://api1.biyingapi.com/hscp/ljds/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/ljds/000001/biyinglicence">http://n.biyingapi.com/hscp/ljds/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/ljds/000001/biyinglicence">http://b.biyingapi.com/hscp/ljds/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司的历届董事会成员名单。</p>
+			  					<p class="card-description1"> 数数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> name </td>
+			                <td> string </td>
+			                <td> 姓名 </td>                            
+			              </tr>
+			              <tr>
+			                <td> title </td>
+			                <td> string </td>
+			                <td> 职务 </td>                            
+			              </tr>
+						  <tr>
+						    <td> sdate </td>
+						    <td> string </td>
+						    <td> 起始日期yyyy-MM-dd </td>                            
+						  </tr><tr>
+			                <td> edate </td>
+			                <td> string </td>
+			                <td> 终止日期yyyy-MM-dd </td>                            
+			              </tr>
+			  			
+			              
+			  						  
+			              <tr>                                                
+			            </tr></tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 历届监事会成员 -->
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">历届监事会成员</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/ljjj/000001/biyinglicence">http://api.biyingapi.com/hscp/ljjj/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/ljjj/000001/biyinglicence">http://api1.biyingapi.com/hscp/ljjj/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/ljjj/000001/biyinglicence">http://n.biyingapi.com/hscp/ljjj/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/ljjj/000001/biyinglicence">http://b.biyingapi.com/hscp/ljjj/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司的历届监事会成员名单。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> name </td>
+			                <td> string </td>
+			                <td> 姓名 </td>                            
+			              </tr>
+			              <tr>
+			                <td> title </td>
+			                <td> string </td>
+			                <td> 职务 </td>                            
+			              </tr>
+			  						  <tr>
+			  						    <td> sdate </td>
+			  						    <td> string </td>
+			  						    <td> 起始日期yyyy-MM-dd </td>                            
+			  						  </tr><tr>
+			                <td> edate </td>
+			                <td> string </td>
+			                <td> 终止日期yyyy-MM-dd </td>                            
+			              </tr>
+			  			
+			              
+			  						  
+			              <tr>                                                
+			            </tr></tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 近年分红 -->
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">近年分红</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/jnfh/000001/biyinglicence">http://api.biyingapi.com/hscp/jnfh/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/jnfh/000001/biyinglicence">http://api1.biyingapi.com/hscp/jnfh/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/jnfh/000001/biyinglicence">http://n.biyingapi.com/hscp/jnfh/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/jnfh/000001/biyinglicence">http://b.biyingapi.com/hscp/jnfh/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司的近年来的分红实施结果。按公告日期倒序。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> sdate </td>
+			                <td> string </td>
+			                <td> 公告日期yyyy-MM-dd </td>                            
+			              </tr>
+			              <tr>
+			                <td> give </td>
+			                <td> string </td>
+			                <td> 每10股送股(单位：股) </td>                            
+			              </tr>
+						  <tr>
+						    <td> change </td>
+						    <td> string </td>
+						    <td> 每10股转增(单位：股) </td>                            
+						  </tr>
+						  <tr>
+			                <td> send </td>
+			                <td> string </td>
+			                <td> 每10股派息(税前，单位：元) </td>                            
+			              </tr>
+						  <tr>
+						    <td> line </td>
+						    <td> string </td>
+						    <td> 进度 </td>                            
+						  </tr>
+						  <tr>
+						    <td> cdate </td>
+						    <td> string </td>
+						    <td> 除权除息日yyyy-MM-dd </td>                            
+						  </tr>
+						  <tr>
+						    <td> edate </td>
+						    <td> string </td>
+						    <td> 股权登记日yyyy-MM-dd </td>                            
+						  </tr>
+						  <tr>
+						    <td> hdate </td>
+						    <td> string </td>
+						    <td> 红股上市日yyyy-MM-dd </td>                            
+						  </tr>
+			  			                           
+			              
+			  			
+			              
+			  						  
+			              <tr>                                                
+			            </tr></tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 近年增发 -->
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">近年增发</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/jnzf/000001/biyinglicence">http://api.biyingapi.com/hscp/jnzf/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/jnzf/000001/biyinglicence">http://api1.biyingapi.com/hscp/jnzf/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/jnzf/000001/biyinglicence">http://n.biyingapi.com/hscp/jnzf/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/jnzf/000001/biyinglicence">http://b.biyingapi.com/hscp/jnzf/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司的近年来的增发情况。按公告日期倒序。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> sdate </td>
+			                <td> string </td>
+			                <td> 公告日期yyyy-MM-dd </td>                            
+			              </tr>
+			              <tr>
+			                <td> type </td>
+			                <td> string </td>
+			                <td> 发行方式 </td>                            
+			              </tr>
+						  <tr>
+						    <td> price </td>
+						    <td> string </td>
+						    <td> 发行价格 </td>                            
+						  </tr>
+						  <tr>
+						    <td> tprice </td>
+						    <td> string </td>
+						    <td> 实际公司募集资金总额 </td>                            
+						  </tr>
+						  <tr>
+						    <td> fprice </td>
+						    <td> string </td>
+						    <td> 发行费用总额 </td>                            
+						  </tr>
+						  <tr>
+						    <td> amount </td>
+						    <td> string </td>
+						    <td> 实际发行数量</td>                            
+						  </tr>
+						  
+						  			                                                  
+			            </tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 解禁限售 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">解禁限售</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/jjxs/000001/biyinglicence">http://api.biyingapi.com/hscp/jjxs/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/jjxs/000001/biyinglicence">http://api1.biyingapi.com/hscp/jjxs/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/jjxs/000001/biyinglicence">http://n.biyingapi.com/hscp/jjxs/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/jjxs/000001/biyinglicence">http://b.biyingapi.com/hscp/jjxs/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司的解禁限售情况。按解禁日期倒序。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> rdate </td>
+			                <td> string </td>
+			                <td> 解禁日期yyyy-MM-dd </td>                            
+			              </tr>
+			              <tr>
+			                <td> ramount </td>
+			                <td> number </td>
+			                <td> 解禁数量(万股) </td>   
+			              </tr>
+						  <tr>
+						    <td> rprice </td>
+						    <td> number </td>
+						    <td> 解禁股流通市值(亿元) </td>   
+						  </tr>
+						   <tr>
+						     <td> batch </td>
+						     <td> number </td>
+						     <td> 上市批次 </td>   
+						   </tr>
+						   <tr>
+						     <td> pdate </td>
+						     <td> string </td>
+						     <td> 公告日期yyyy-MM-dd </td>   
+						   </tr>
+						                 
+			                    
+			            </tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			 
+			  <!-- 近一年各季度利润 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">近一年各季度利润</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/jdlr/000001/biyinglicence">http://api.biyingapi.com/hscp/jdlr/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/jdlr/000001/biyinglicence">http://api1.biyingapi.com/hscp/jdlr/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/jdlr/000001/biyinglicence">http://n.biyingapi.com/hscp/jdlr/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/jdlr/000001/biyinglicence">http://b.biyingapi.com/hscp/jdlr/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司近一年各个季度的利润。按截止日期倒序。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> date </td>
+			                <td> string </td>
+			                <td> 截止日期yyyy-MM-dd </td>                            
+			              </tr>
+			              <tr>
+			                <td> income </td>
+			                <td> string </td>
+			                <td> 营业收入（万元） </td>   
+			              </tr>
+			  						  <tr>
+			  						    <td> expend </td>
+			  						    <td> string </td>
+			  						    <td> 营业支出（万元） </td>                            
+			  						  </tr><tr>
+			                <td> profit </td>
+			                <td> string </td>
+			                <td> 营业利润（万元） </td>                            
+			              </tr><tr>
+			                <td> totalp </td>
+			                <td> string </td>
+			                <td> 利润总额（万元） </td>                            
+			              </tr><tr>
+			                <td> reprofit </td>
+			                <td> string </td>
+			                <td> 净利润（万元） </td>                            
+			              </tr><tr>
+			                <td> basege </td>
+			                <td> string </td>
+			                <td> 基本每股收益(元/股) </td>                            
+			              </tr><tr>
+			                <td> ettege </td>
+			                <td> string </td>
+			                <td> 稀释每股收益(元/股) </td>                            
+			              </tr><tr>
+			                <td> otherp </td>
+			                <td> string </td>
+			                <td> 其他综合收益（万元） </td>                            
+			              </tr><tr>
+			                <td> totalcp </td>
+			                <td> string </td>
+			                <td> 综合收益总额（万元） </td>                            
+			              </tr>                          
+			              
+			  				
+			  						                 
+			                    
+			            </tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 近一年各季度现金流 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">近一年各季度现金流</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/jdxj/000001/biyinglicence">http://api.biyingapi.com/hscp/jdxj/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/jdxj/000001/biyinglicence">http://api1.biyingapi.com/hscp/jdxj/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/jdxj/000001/biyinglicence">http://n.biyingapi.com/hscp/jdxj/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/jdxj/000001/biyinglicence">http://b.biyingapi.com/hscp/jdxj/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司近一年各个季度的现金流。按截止日期倒序。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> date </td>
+			                <td> string </td>
+			                <td> 截止日期yyyy-MM-dd </td>                            
+			              </tr>
+			              <tr>
+			                <td> jyin </td>
+			                <td> string </td>
+			                <td> 经营活动现金流入小计（万元） </td>   
+			              </tr>
+			  						  <tr>
+			  						    <td> jyout </td>
+			  						    <td> string </td>
+			  						    <td> 经营活动现金流出小计（万元） </td>                            
+			  						  </tr><tr>
+			                <td> jyfinal </td>
+			                <td> string </td>
+			                <td> 经营活动产生的现金流量净额（万元） </td>                            
+			              </tr><tr>
+			                <td> tzin </td>
+			                <td> string </td>
+			                <td> 投资活动现金流入小计（万元） </td>                            
+			              </tr><tr>
+			                <td> tzout </td>
+			                <td> string </td>
+			                <td> 投资活动现金流出小计（万元） </td>                            
+			              </tr><tr>
+			                <td> tzfinal </td>
+			                <td> string </td>
+			                <td>投资活动产生的现金流量净额（万元） </td>                            
+			              </tr><tr>
+			                <td> czin </td>
+			                <td> string </td>
+			                <td> 筹资活动现金流入小计（万元） </td>                            
+			              </tr><tr>
+			                <td> czout </td>
+			                <td> string </td>
+			                <td> 筹资活动现金流出小计（万元） </td>                            
+			              </tr><tr>
+			                <td> czfinal </td>
+			                <td> string </td>
+			                <td> 筹资活动产生的现金流量净额（万元） </td>                            
+			              </tr>  
+						   <tr>
+						     <td> hl </td>
+						     <td> string </td>
+						     <td> 汇率变动对现金及现金等价物的影响（万元） </td>                            
+						   </tr>   
+						   <tr>
+						     <td> cashinc </td>
+						     <td> string </td>
+						     <td> 现金及现金等价物净增加额（万元） </td>                            
+						   </tr>   
+						   <tr>
+						     <td> cashs </td>
+						     <td> string </td>
+						     <td> 期初现金及现金等价物余额（万元） </td>                            
+						   </tr>   
+						   <tr>
+						     <td> cashe </td>
+						     <td> string </td>
+						     <td> 期末现金及现金等价物余额（万元） </td>                            
+						   </tr>   
+												 
+			              
+			  				
+			  						                 
+			                    
+			            </tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 近年业绩预告 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">近年业绩预告</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/yjyg/000001/biyinglicence">http://api.biyingapi.com/hscp/yjyg/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/yjyg/000001/biyinglicence">http://api1.biyingapi.com/hscp/yjyg/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/yjyg/000001/biyinglicence">http://n.biyingapi.com/hscp/yjyg/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/yjyg/000001/biyinglicence">http://b.biyingapi.com/hscp/yjyg/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司近年来的业绩预告。按公告日期倒序。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> pdate </td>
+			                <td> string </td>
+			                <td> 公告日期yyyy-MM-dd </td>                            
+			              </tr>
+			              <tr>
+			                <td> rdate </td>
+			                <td> string </td>
+			                <td> 报告期yyyy-MM-dd </td>   
+			              </tr>
+			  						  <tr>
+			  						    <td> type </td>
+			  						    <td> string </td>
+			  						    <td> 类型 </td>                            
+			  						  </tr><tr>
+			                <td> abs </td>
+			                <td> string </td>
+			                <td> 业绩预告摘要 </td>                            
+			              </tr><tr>
+			                <td> old </td>
+			                <td> string </td>
+			                <td> 上年同期每股收益(元) </td>                            
+			              </tr>
+			  												 
+			              
+			  				
+			  						                 
+			                    
+			            </tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>.
+			  <!-- 财务指标 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">财务指标</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/cwzb/000001/biyinglicence">http://api.biyingapi.com/hscp/cwzb/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/cwzb/000001/biyinglicence">http://api1.biyingapi.com/hscp/cwzb/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/cwzb/000001/biyinglicence">http://n.biyingapi.com/hscp/cwzb/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/cwzb/000001/biyinglicence">http://b.biyingapi.com/hscp/cwzb/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司近四个季度的主要财务指标。按报告日期倒序。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> date </td>
+			                <td> string </td>
+			                <td> 报告日期yyyy-MM-dd </td>                            
+			              </tr>
+			              <tr>
+			                <td> tbmg </td>
+			                <td> string </td>
+			                <td> 摊薄每股收益(元) </td>   
+			              </tr>
+			              <tr>
+			                <td> jqmg </td>
+			                <td> string </td>
+			                <td> 加权每股收益(元) </td>   
+			              </tr>
+						  <tr>
+						    <td> mgsy </td>
+						    <td> string </td>
+						    <td> 每股收益_调整后(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> kfmg </td>
+						    <td> string </td>
+						    <td> 扣除非经常性损益后的每股收益(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> mgjz </td>
+						    <td> string </td>
+						    <td> 每股净资产_调整前(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> mgjzad </td>
+						    <td> string </td>
+						    <td> 每股净资产_调整后(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> mgjy </td>
+						    <td> string </td>
+						    <td> 每股经营性现金流(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> mggjj </td>
+						    <td> string </td>
+						    <td> 每股资本公积金(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> mgwly </td>
+						    <td> string </td>
+						    <td> 每股未分配利润(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> zclr </td>
+						    <td> string </td>
+						    <td> 总资产利润率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> zylr </td>
+						    <td> string </td>
+						    <td> 主营业务利润率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> zzlr </td>
+						    <td> string </td>
+						    <td> 总资产净利润率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> cblr </td>
+						    <td> string </td>
+						    <td> 成本费用利润率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> yylr </td>
+						    <td> string </td>
+						    <td> 营业利润率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> zycb </td>
+						    <td> string </td>
+						    <td> 主营业务成本率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> xsjl </td>
+						    <td> string </td>
+						    <td> 销售净利率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> gbbc </td>
+						    <td> string </td>
+						    <td> 股本报酬率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> jzbc </td>
+						    <td> string </td>
+						    <td> 净资产报酬率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> zcbc </td>
+						    <td> string </td>
+						    <td> 资产报酬率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> xsml </td>
+						    <td> string </td>
+						    <td> 销售毛利率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> xxbz </td>
+						    <td> string </td>
+						    <td> 三项费用比重 </td>   
+						  </tr>
+						  <tr>
+						    <td> fzy </td>
+						    <td> string </td>
+						    <td> 非主营比重 </td>   
+						  </tr>
+						  <tr>
+						    <td> zybz </td>
+						    <td> string </td>
+						    <td> 主营利润比重 </td>   
+						  </tr>
+						  <tr>
+						    <td> gxff </td>
+						    <td> string </td>
+						    <td> 股息发放率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> tzsy </td>
+						    <td> string </td>
+						    <td> 投资收益率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> zyyw </td>
+						    <td> string </td>
+						    <td> 主营业务利润(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> jzsy </td>
+						    <td> string </td>
+						    <td> 净资产收益率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> jqjz </td>
+						    <td> string </td>
+						    <td> 加权净资产收益率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> kflr </td>
+						    <td> string </td>
+						    <td> 扣除非经常性损益后的净利润(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> zysr </td>
+						    <td> string </td>
+						    <td> 主营业务收入增长率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> jlzz </td>
+						    <td> string </td>
+						    <td> 净利润增长率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> jzzz </td>
+						    <td> string </td>
+						    <td> 净资产增长率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> zzzz </td>
+						    <td> string </td>
+						    <td> 总资产增长率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> yszz </td>
+						    <td> string </td>
+						    <td> 应收账款周转率(次) </td>   
+						  </tr>
+						  <tr>
+						    <td> yszzt </td>
+						    <td> string </td>
+						    <td> 应收账款周转天数(天) </td>   
+						  </tr>
+						  <tr>
+						    <td> chzz </td>
+						    <td> string </td>
+						    <td> 存货周转天数(天) </td>   
+						  </tr>
+						  <tr>
+						    <td> chzzl </td>
+						    <td> string </td>
+						    <td> 存货周转率(次) </td>   
+						  </tr>
+						  <tr>
+						    <td> gzzz </td>
+						    <td> string </td>
+						    <td> 固定资产周转率(次) </td>   
+						  </tr>
+						  <tr>
+						    <td> zzzzl </td>
+						    <td> string </td>
+						    <td> 总资产周转率(次) </td>   
+						  </tr>
+						  <tr>
+						    <td> zzzzt </td>
+						    <td> string </td>
+						    <td> 总资产周转天数(天) </td>   
+						  </tr>
+						  <tr>
+						    <td> ldzz </td>
+						    <td> string </td>
+						    <td> 流动资产周转率(次) </td>   
+						  </tr>
+						  <tr>
+						    <td> ldzzt </td>
+						    <td> string </td>
+						    <td> 流动资产周转天数(天) </td>   
+						  </tr>
+						  <tr>
+						    <td> gdzz </td>
+						    <td> string </td>
+						    <td> 股东权益周转率(次) </td>   
+						  </tr>
+						  <tr>
+						    <td> ldbl </td>
+						    <td> string </td>
+						    <td> 流动比率 </td>   
+						  </tr>
+						  <tr>
+						    <td> sdbl </td>
+						    <td> string </td>
+						    <td> 速动比率 </td>   
+						  </tr>
+						  <tr>
+						    <td> xjbl </td>
+						    <td> string </td>
+						    <td> 现金比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> lxzf </td>
+						    <td> string </td>
+						    <td> 利息支付倍数 </td>   
+						  </tr>
+						  <tr>
+						    <td> zjbl </td>
+						    <td> string </td>
+						    <td> 长期债务与营运资金比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> gdqy </td>
+						    <td> string </td>
+						    <td> 股东权益比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> cqfz </td>
+						    <td> string </td>
+						    <td> 长期负债比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> gdgd </td>
+						    <td> string </td>
+						    <td> 股东权益与固定资产比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> fzqy </td>
+						    <td> string </td>
+						    <td> 负债与所有者权益比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> zczjbl </td>
+						    <td> string </td>
+						    <td> 长期资产与长期资金比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> zblv </td>
+						    <td> string </td>
+						    <td> 资本化比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> gdzcjz </td>
+						    <td> string </td>
+						    <td> 固定资产净值率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> zbgdh	 </td>
+						    <td> string </td>
+						    <td> 资本固定化比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> cqbl </td>
+						    <td> string </td>
+						    <td> 产权比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> qxjzb </td>
+						    <td> string </td>
+						    <td> 清算价值比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> gdzcbz </td>
+						    <td> string </td>
+						    <td> 固定资产比重(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> zcfzl </td>
+						    <td> string </td>
+						    <td> 资产负债率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> zzc </td>
+						    <td> string </td>
+						    <td> 总资产(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> jyxj </td>
+						    <td> string </td>
+						    <td> 经营现金净流量对销售收入比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> zcjyxj </td>
+						    <td> string </td>
+						    <td> 资产的经营现金流量回报率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> jylrb </td>
+						    <td> string </td>
+						    <td> 经营现金净流量与净利润的比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> jyfzl </td>
+						    <td> string </td>
+						    <td> 经营现金净流量对负债比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> xjlbl </td>
+						    <td> string </td>
+						    <td> 现金流量比率(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> dqgptz </td>
+						    <td> string </td>
+						    <td> 短期股票投资(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> dqzctz </td>
+						    <td> string </td>
+						    <td> 短期债券投资(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> dqjytz </td>
+						    <td> string </td>
+						    <td> 短期其它经营性投资(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> qcgptz </td>
+						    <td> string </td>
+						    <td> 长期股票投资(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> cqzqtz </td>
+						    <td> string </td>
+						    <td> 长期债券投资(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> cqjyxtz </td>
+						    <td> string </td>
+						    <td> 长期其它经营性投资(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> yszk1 </td>
+						    <td> string </td>
+						    <td> 1年以内应收帐款(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> yszk12 </td>
+						    <td> string </td>
+						    <td> 1-2年以内应收帐款(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> yszk23 </td>
+						    <td> string </td>
+						    <td> 2-3年以内应收帐款(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> yszk3 </td>
+						    <td> string </td>
+						    <td> 3年以内应收帐款(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> yfhk1 </td>
+						    <td> string </td>
+						    <td> 1年以内预付货款(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> yfhk12 </td>
+						    <td> string </td>
+						    <td> 1-2年以内预付货款(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> yfhk23 </td>
+						    <td> string </td>
+						    <td> 2-3年以内预付货款(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> yfhk3 </td>
+						    <td> string </td>
+						    <td> 3年以内预付货款(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> ysk1	 </td>
+						    <td> string </td>
+						    <td> 1年以内其它应收款(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> ysk12 </td>
+						    <td> string </td>
+						    <td> 1-2年以内其它应收款(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> ysk23 </td>
+						    <td> string </td>
+						    <td> 2-3年以内其它应收款(元) </td>   
+						  </tr>
+						  <tr>
+						    <td> ysk3 </td>
+						    <td> string </td>
+						    <td> 3年以内其它应收款(元) </td>   
+						  </tr>
+						  			  			
+						  			  			
+												
+						  			  			
+						  			  			
+			  			
+			  						  
+			              <tr>                                                
+			            </tr></tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 十大股东 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">十大股东</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/sdgd/000001/biyinglicence">http://api.biyingapi.com/hscp/sdgd/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/sdgd/000001/biyinglicence">http://api1.biyingapi.com/hscp/sdgd/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/sdgd/000001/biyinglicence">http://n.biyingapi.com/hscp/sdgd/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/sdgd/000001/biyinglicence">http://b.biyingapi.com/hscp/sdgd/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司的十大股东数据。按截止日期倒序。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> jzrq </td>
+			                <td> string </td>
+			                <td> 截止日期 yyyy-MM-dd </td>                            
+			              </tr>
+			              <tr>
+			                <td> ggrq </td>
+			                <td> string </td>
+			                <td> 公告日期 yyyy-MM-dd </td>   
+			              </tr>
+						 <tr>
+						   <td> gdsm </td>
+						   <td> string </td>
+						   <td> 股东说明 </td>   
+						 </tr>
+						 <tr>
+						   <td> gdzs </td>
+						   <td> number </td>
+						   <td> 股东总数 </td>   
+						 </tr>
+						 <tr>
+						   <td> pjcg </td>
+						   <td> number </td>
+						   <td> 平均持股(单位：股，按总股本计算) </td>   
+						 </tr>
+						  
+			  				
+			  												 
+			              
+			  				
+			  						                 
+			                    
+			            </tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>.
+			  <!-- 十大流通股东 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">十大流通股东</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/ltgd/000001/biyinglicence">http://api.biyingapi.com/hscp/ltgd/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/ltgd/000001/biyinglicence">http://api1.biyingapi.com/hscp/ltgd/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/ltgd/000001/biyinglicence">http://n.biyingapi.com/hscp/ltgd/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/ltgd/000001/biyinglicence">http://b.biyingapi.com/hscp/ltgd/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司的十大流通股东数据。按公告日期倒序。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> jzrq </td>
+			                <td> string </td>
+			                <td> 截止日期 yyyy-MM-dd </td>                            
+			              </tr>
+			              <tr>
+			                <td> ggrq </td>
+			                <td> string </td>
+			                <td> 公告日期 yyyy-MM-dd </td>   
+			              </tr>
+						  
+
+			  						  
+			  				
+			  												 
+			              
+			  				
+			  						                 
+			                    
+			            </tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>.
+			  <!-- 股东变化趋势 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">股东变化趋势</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/gdbh/000001/biyinglicence">http://api.biyingapi.com/hscp/gdbh/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/gdbh/000001/biyinglicence">http://api1.biyingapi.com/hscp/gdbh/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/gdbh/000001/biyinglicence">http://n.biyingapi.com/hscp/gdbh/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/gdbh/000001/biyinglicence">http://b.biyingapi.com/hscp/gdbh/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取上市公司的股东变化趋势数据。按截止日期倒序。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> jzrq </td>
+			                <td> string </td>
+			                <td> 截止日期 yyyy-MM-dd </td>                            
+			              </tr>
+			              <tr>
+			                <td> gdhs </td>
+			                <td> string </td>
+			                <td> 股东户数 </td>   
+			              </tr>
+						  <tr>
+						    <td> bh </td>
+						    <td> string </td>
+						    <td> 比上期变化情况 </td>   
+						  </tr>
+						  
+			  						  
+			  
+			  						  
+			  				
+			  												 
+			              
+			  				
+			  						                 
+			                    
+			            </tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>.
+			  <!-- 基金持股 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">基金持股</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hscp/jjcg/000001/biyinglicence">http://api.biyingapi.com/hscp/jjcg/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hscp/jjcg/000001/biyinglicence">http://api1.biyingapi.com/hscp/jjcg/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hscp/jjcg/000001/biyinglicence">http://n.biyingapi.com/hscp/jjcg/股票代码(如000001)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hscp/jjcg/000001/biyinglicence">http://b.biyingapi.com/hscp/jjcg/股票代码(如000001)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码获取该股票最近500家左右的基金持股情况。按截止日期倒序。</p>
+			  					<p class="card-description2"> 数据更新：每天15:30开始更新，次日凌晨3点前完成</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			                <th> 字段名称 </th>
+			                <th> 数据类型 </th>
+			                <th> 字段说明 </th>                           
+			              </tr>
+			            </thead>
+			            <tbody>
+			              <tr>
+			                <td> jzrq </td>
+			                <td> string </td>
+			                <td> 截止日期 yyyy-MM-dd </td>                            
+			              </tr>
+			              <tr>
+			                <td> jjmc </td>
+			                <td> string </td>
+			                <td> 基金名称 </td>   
+			              </tr>
+						  <tr>
+						    <td> jjdm </td>
+						    <td> string </td>
+						    <td> 基金代码 </td>   
+						  </tr>
+						  <tr>
+						    <td> ccsl </td>
+						    <td> number </td>
+						    <td> 持仓数量(股) </td>   
+						  </tr>
+						  <tr>
+						    <td> ltbl </td>
+						    <td> number </td>
+						    <td> 占流通股比例(%) </td>   
+						  </tr>
+						  <tr>
+						    <td> cgsz </td>
+						    <td> number </td>
+						    <td> 持股市值（元） </td>   
+						  </tr>
+						  <tr>
+						    <td> jzbl </td>
+						    <td> number </td>
+						    <td> 占净值比例（%） </td>   
+						  </tr>
+						  
+			  			
+			  						  
+			  				
+			  												 
+			              
+			  				
+			  						                 
+			                    
+			            </tbody>
+			          </table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>.
+
+			  
+             
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              Copyright © 2018-2024 必盈网络科技服务有限公司
+            </div>
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+			  客服电话：184-3512-8452&nbsp;&nbsp;&nbsp;&nbsp;客服微信ID：biyingapiclient
+			</div>
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+			  <a target="_blank" href="https://beian.miit.gov.cn/">网站备案号：晋ICP备2023021176号</a>
+			  
+			</div>
+			
+			<div class="d-sm-flex justify-content-center justify-content-sm-between" style="color: red;">
+			       风险提示：本站所有免费及收费信息和数据仅供参考，不构成投资建议，本站不承担由此导致的任何法律责任。
+			</div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="static/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="static/js/off-canvas.js"></script>
+    <script src="static/js/hoverable-collapse.js"></script>
+    <script src="static/js/misc.js"></script>
+    <script src="static/js/settings.js"></script>
+    <script src="static/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+  
+</body></html>

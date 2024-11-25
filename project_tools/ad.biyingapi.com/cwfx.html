@@ -1,0 +1,1000 @@
+<!DOCTYPE html><html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>API文档 | 必盈API | 金融数据服务</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="static/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="static/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+    <!-- End layout styles -->
+	<script src="https://hm.baidu.com/hm.js?a525b3a8ede698e09c51bfa27ecf323e"></script><script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?a525b3a8ede698e09c51bfa27ecf323e";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+   
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="http://www.biyingapi.com"><img src="static/picture/logo.png" alt="logo"></a>
+          <a class="sidebar-brand brand-logo-mini" href="http://www.biyingapi.com"><img src="static/picture/logomini.png" alt="logo"></a>
+        </div>
+		
+		
+        <ul class="nav">
+ 
+          <li class="nav-item nav-category">
+            <span class="nav-link">API文档</span>	
+						
+						
+						
+						
+			</li><li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic1" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>							
+			    <span class="menu-title">沪深基础数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic1">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="hslb.html">沪深股票列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="gsxq.html">公司详情</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="zjl.html">资金流</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zdgc.html">涨跌股池</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="rzrq.html">融资融券</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zsgn.html">指数、行业、概念</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="ssjy.html">实时交易</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zxsj.html">最新交易数据</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="lssj.html">历史交易数据</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			
+			<li class="nav-item menu-items active">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">沪深分析数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse show" id="ui-basic2">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="tzck.html">投资参考</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="lhb.html">龙虎榜</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="scbx.html">市场表现</a></li>
+				  <li class="nav-item"> <a class="nav-link active" href="cwfx.html">财务分析</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="jgcg.html">机构持股</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="bkzj.html">板块资金流向</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="ggzj.html">个股资金流向</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zjlx.html">资金线路图</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic3" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">沪深指数数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic3">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="hzlb.html">沪深指数列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="hzss.html">实时数据</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="zsjy.html">最新交易数据</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="lsjy.html">历史交易数据</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic4" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">基金行情数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic4">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="jjlb.html">基金列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="gzhq.html">估值行情</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="jszb.html">技术指标</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="daxx.html">档案信息</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			
+       
+        </ul>
+      
+	  
+	  </nav>
+	  
+	  
+	  
+	  
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="static/picture/logomini.png" alt="logo"></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+ 
+			
+			
+			<button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+			  
+			  
+			  
+          
+            
+			
+			
+			
+			<div class="row">
+				
+		       <!-- 盈利能力 -->
+				
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title2">盈利能力</h4>
+                    <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hicw/yl/2023/1/biyinglicence">http://api.biyingapi.com/hicw/yl/年度(如2020)/季度(如1)/您的licence</a></p>
+					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hicw/yl/2023/1/biyinglicence">http://api1.biyingapi.com/hicw/yl/年度(如2020)/季度(如1)/您的licence</a></p>
+					<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hicw/yl/2023/1/biyinglicence">http://n.biyingapi.com/hicw/yl/年度(如2020)/季度(如1)/您的licence</a></p>
+					<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hicw/yl/2023/1/biyinglicence">http://b.biyingapi.com/hicw/yl/年度(如2020)/季度(如1)/您的licence</a></p>
+					<p class="card-description2"> 接口说明：个股盈利能力汇总，支持“年份_季度”查询，年份可选（1989~当前年份），季度可选（1:一季报，2：中报，3：三季报，4：年报），如“2021_1”，表示查询2021年一季度数据。</p>
+					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+                    <p></p>
+                    <div class="table-responsive">
+                      <table class="table table-dark">
+                        <thead>
+                          <tr>
+                          												<td>字段名称
+                          												</td><td>数据类型
+                          												</td><td>字段说明
+                          											</td></tr>
+                          											<tr>
+                          												<td>dm
+                          												</td><td>string
+                          												</td><td>代码
+                          											</td></tr>
+                          											<tr>
+                          												<td>mc
+                          												</td><td>string
+                          												</td><td>名称
+                          											</td></tr>
+                          											<tr>
+                          												<td>jzcsy
+                          												</td><td>number
+                          												</td><td>净资产收益率(%)
+                          											</td></tr>
+                          											<tr>
+                          												<td>jll
+                          												</td><td>number
+                          												</td><td>净利率(%)
+                          											</td></tr>
+                          											<tr>
+                          												<td>mll
+                          												</td><td>number
+                          												</td><td>毛利率(%)
+                          											</td></tr>
+                          											<tr>
+                          												<td>jlr
+                          												</td><td>number
+                          												</td><td>净利润(百万元)
+                          											</td></tr>
+                          											<tr>
+                          												<td>mgsy
+                          												</td><td>number
+                          												</td><td>每股收益(元)
+                          											</td></tr>
+                          											<tr>
+                          												<td>yysr
+                          												</td><td>number
+                          												</td><td>营业收入(百万元)
+                          											</td></tr>
+                          											<tr>
+                          												<td>mgzysr
+                          												</td><td>number
+                          												</td><td>每股主营业务收入(元)
+                          											</td></tr>
+                          											<tr>
+                          												<td>y
+                          												</td><td>number
+                          												</td><td>报告年份，如2021
+                          											</td></tr>
+                          											<tr>
+                          												<td>q
+                          												</td><td>number
+                          												</td><td>报告季度，1:一季报，2：中报，3：三季报，4：年报
+                          											</td></tr>
+                          											<tr>
+                          												<td>yq
+                          												</td><td>string
+                          												</td><td>报告年份季度含义，如“2021年一季报”
+                          											</td></tr>                                        
+                        
+                      </thead></table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  <!-- 运营能力 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">运营能力</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hicw/yy/2023/1/biyinglicence">http://api.biyingapi.com/hicw/yy/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hicw/yy/2023/1/biyinglicence">http://api1.biyingapi.com/hicw/yy/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hicw/yy/2023/1/biyinglicence">http://n.biyingapi.com/hicw/yy/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hicw/yy/2023/1/biyinglicence">http://b.biyingapi.com/hicw/yy/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：个股运营能力汇总，支持“年份_季度”查询，年份可选（1989~当前年份），季度可选（1:一季报，2：中报，3：三季报，4：年报），如“2021_1”，表示查询2021年一季度数据。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>
+			              											<tr>
+			              												<td>dm
+			              												</td><td>string
+			              												</td><td>代码
+			              											</td></tr>
+			              											<tr>
+			              												<td>mc
+			              												</td><td>string
+			              												</td><td>名称
+			              											</td></tr>
+			              											<tr>
+			              												<td>yszzzl
+			              												</td><td>number
+			              												</td><td>应收账款周转率(次)
+			              											</td></tr>
+			              											<tr>
+			              												<td>yszts
+			              												</td><td>number
+			              												</td><td>应收账款周转天数(天)
+			              											</td></tr>
+			              											<tr>
+			              												<td>chzzl
+			              												</td><td>number
+			              												</td><td>存货周转率(次)
+			              											</td></tr>
+			              											<tr>
+			              												<td>chzzts
+			              												</td><td>number
+			              												</td><td>存货周转天数(天)
+			              											</td></tr>
+			              											<tr>
+			              												<td>ldzczzl
+			              												</td><td>number
+			              												</td><td>流动资产周转率(次)
+			              											</td></tr>
+			              											<tr>
+			              												<td>ldzczzts
+			              												</td><td>number
+			              												</td><td>流动资产周转天数(天)
+			              											</td></tr>
+			              											<tr>
+			              												<td>y
+			              												</td><td>number
+			              												</td><td>报告年份，如2021
+			              											</td></tr>
+			              											<tr>
+			              												<td>q
+			              												</td><td>number
+			              												</td><td>报告季度，1:一季报，2：中报，3：三季报，4：年报
+			              											</td></tr>
+			              											<tr>
+			              												<td>yq
+			              												</td><td>string
+			              												</td><td>报告年份季度含义，如“2021年一季报”
+			              											</td></tr>
+			              											<tr>
+			              												<td>yq
+			              												</td><td>string
+			              												</td><td>报告年份季度含义，如“2021年一季报”
+			              											</td></tr>                                        
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 成长能力 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">成长能力</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hicw/cz/2023/1/biyinglicence">http://api.biyingapi.com/hicw/cz/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hicw/cz/2023/1/biyinglicence">http://api1.biyingapi.com/hicw/cz/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hicw/cz/2023/1/biyinglicence">http://n.biyingapi.com/hicw/cz/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hicw/cz/2023/1/biyinglicence">http://b.biyingapi.com/hicw/cz/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：接口说明：个股成长能力汇总，支持“年份_季度”查询，年份可选（1989~当前年份），季度可选（1:一季报，2：中报，3：三季报，4：年报），如“2021_1”，表示查询2021年一季度数据。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>
+			              											<tr>
+			              												<td>dm
+			              												</td><td>string
+			              												</td><td>代码
+			              											</td></tr>
+			              											<tr>
+			              												<td>mc
+			              												</td><td>string
+			              												</td><td>名称
+			              											</td></tr>
+			              											<tr>
+			              												<td>zyzzl
+			              												</td><td>number
+			              												</td><td>主营业务收入增长率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>jlrzzl
+			              												</td><td>number
+			              												</td><td>净利润增长率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>jzczzl
+			              												</td><td>number
+			              												</td><td>净资产增长率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>zzczzl
+			              												</td><td>number
+			              												</td><td>总资产增长率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>mgzzl
+			              												</td><td>number
+			              												</td><td>每股收益增长率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>gdzzl
+			              												</td><td>number
+			              												</td><td>股东权益增长率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>y
+			              												</td><td>number
+			              												</td><td>报告年份，如2021
+			              											</td></tr>
+			              											<tr>
+			              												<td>q
+			              												</td><td>number
+			              												</td><td>报告季度，1:一季报，2：中报，3：三季报，4：年报
+			              											</td></tr>
+			              											<tr>
+			              												<td>yq
+			              												</td><td>string
+			              												</td><td>报告年份季度含义，如“2021年一季报”
+			              											</td></tr>                                        
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 偿债能力 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">偿债能力</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hicw/cznl/2023/1/biyinglicence">http://api.biyingapi.com/hicw/cznl/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hicw/cznl/2023/1/biyinglicence">http://api1.biyingapi.com/hicw/cznl/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hicw/cznl/2023/1/biyinglicence">http://n.biyingapi.com/hicw/cznl/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hicw/cznl/2023/1/biyinglicence">http://b.biyingapi.com/hicw/cznl/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：个股偿债能力汇总，支持“年份_季度”查询，年份可选（1989~当前年份），季度可选（1:一季报，2：中报，3：三季报，4：年报），如“2021_1”，表示查询2021年一季度数据。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>
+			              											<tr>
+			              												<td>dm
+			              												</td><td>string
+			              												</td><td>代码
+			              											</td></tr>
+			              											<tr>
+			              												<td>mc
+			              												</td><td>string
+			              												</td><td>名称
+			              											</td></tr>
+			              											<tr>
+			              												<td>ldbl
+			              												</td><td>number
+			              												</td><td>流动比率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>sdbl
+			              												</td><td>number
+			              												</td><td>速动比率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>xjbl
+			              												</td><td>number
+			              												</td><td>现金比率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>lxbs
+			              												</td><td>number
+			              												</td><td>利息支付倍数
+			              											</td></tr>
+			              											<tr>
+			              												<td>gdbl
+			              												</td><td>number
+			              												</td><td>股东权益比率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>zcfzl
+			              												</td><td>number
+			              												</td><td>资产负债率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>y
+			              												</td><td>number
+			              												</td><td>报告年份，如2021
+			              											</td></tr>
+			              											<tr>
+			              												<td>q
+			              												</td><td>number
+			              												</td><td>报告季度，1:一季报，2：中报，3：三季报，4：年报
+			              											</td></tr>
+			              											<tr>
+			              												<td>yq
+			              												</td><td>string
+			              												</td><td>报告年份季度含义，如“2021年一季报”
+			              											</td></tr>                                       
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 现金流量 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">现金流量</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hicw/xj/2023/1/biyinglicence">http://api.biyingapi.com/hicw/xj/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hicw/xj/2023/1/biyinglicence">http://api1.biyingapi.com/hicw/xj/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hicw/xj/2023/1/biyinglicence">http://n.biyingapi.com/hicw/xj/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hicw/xj/2023/1/biyinglicence">http://b.biyingapi.com/hicw/xj/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：个股现金流量汇总，支持“年份_季度”查询，年份可选（1989~当前年份），季度可选（1:一季报，2：中报，3：三季报，4：年报），如“2021_1”，表示查询2021年一季度数据。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>
+			              											<tr>
+			              												<td>dm
+			              												</td><td>string
+			              												</td><td>代码
+			              											</td></tr>
+			              											<tr>
+			              												<td>mc
+			              												</td><td>string
+			              												</td><td>名称
+			              											</td></tr>
+			              											<tr>
+			              												<td>xjlxxbl
+			              												</td><td>number
+			              												</td><td>经营现金净流量对销售收入比率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>xjlhbl
+			              												</td><td>number
+			              												</td><td>资产的经营现金流量回报率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>xjljlrbl
+			              												</td><td>number
+			              												</td><td>经营现金净流量与净利润的比率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>xjlfzbl
+			              												</td><td>number
+			              												</td><td>经营现金净流量对负债比率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>xjllbl
+			              												</td><td>number
+			              												</td><td>现金流量比率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>y
+			              												</td><td>number
+			              												</td><td>报告年份，如2021
+			              											</td></tr>
+			              											<tr>
+			              												<td>q
+			              												</td><td>number
+			              												</td><td>报告季度，1:一季报，2：中报，3：三季报，4：年报
+			              											</td></tr>
+			              											<tr>
+			              												<td>yq
+			              												</td><td>string
+			              												</td><td>报告年份季度含义，如“2021年一季报”
+			              											</td></tr>                                       
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 业绩报表 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">业绩报表</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hicw/yjbb/2023/1/biyinglicence">http://api.biyingapi.com/hicw/yjbb/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hicw/yjbb/2023/1/biyinglicence">http://api1.biyingapi.com/hicw/yjbb/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hicw/yjbb/2023/1/biyinglicence">http://n.biyingapi.com/hicw/yjbb/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hicw/yjbb/2023/1/biyinglicence">http://b.biyingapi.com/hicw/yjbb/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：个股业绩报表汇总，支持“年份_季度”查询，年份可选（1989~当前年份），季度可选（1:一季报，2：中报，3：三季报，4：年报），如“2021_1”，表示查询2021年一季度数据。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>
+			              											<tr>
+			              												<td>dm
+			              												</td><td>string
+			              												</td><td>代码
+			              											</td></tr>
+			              											<tr>
+			              												<td>mc
+			              												</td><td>string
+			              												</td><td>名称
+			              											</td></tr>
+			              											<tr>
+			              												<td>mgsy
+			              												</td><td>number
+			              												</td><td>每股收益(元)
+			              											</td></tr>
+			              											<tr>
+			              												<td>mgsytb
+			              												</td><td>number
+			              												</td><td>每股收益同比(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>mgjz
+			              												</td><td>number
+			              												</td><td>每股净资产(元)
+			              											</td></tr>
+			              											<tr>
+			              												<td>jzsy
+			              												</td><td>number
+			              												</td><td>净资产收益率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>mgxjl
+			              												</td><td>number
+			              												</td><td>每股现金流量(元)
+			              											</td></tr>
+			              											<tr>
+			              												<td>jlr
+			              												</td><td>number
+			              												</td><td>净利润(万元)
+			              											</td></tr>
+			              											<tr>
+			              												<td>jlrtb
+			              												</td><td>number
+			              												</td><td>净利润同比(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>fpfa
+			              												</td><td>string
+			              												</td><td>分配方案
+			              											</td></tr>
+			              											<tr>
+			              												<td>rdate
+			              												</td><td>string
+			              												</td><td>发布日期
+			              											</td></tr>
+			              											<tr>
+			              												<td>y
+			              												</td><td>number
+			              												</td><td>报告年份，如2021
+			              											</td></tr>
+			              											<tr>
+			              												<td>q
+			              												</td><td>number
+			              												</td><td>报告季度，1:一季报，2：中报，3：三季报，4：年报
+			              											</td></tr>
+			              											<tr>
+			              												<td>yq
+			              												</td><td>string
+			              												</td><td>报告年份季度含义，如“2021年一季报”
+			              											</td></tr>                                       
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 业绩预告 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">业绩预告</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hicw/yjyg/2023/1/biyinglicence">http://api.biyingapi.com/hicw/yjyg/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hicw/yjyg/2023/1/biyinglicence">http://api1.biyingapi.com/hicw/yjyg/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hicw/yjyg/2023/1/biyinglicence">http://n.biyingapi.com/hicw/yjyg/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hicw/yjyg/2023/1/biyinglicence">http://b.biyingapi.com/hicw/yjyg/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：个股业绩预告汇总，支持“年份_季度”查询，年份可选（1989~当前年份），季度可选（1:一季报，2：中报，3：三季报，4：年报），如“2021_1”，表示查询2021年一季度数据。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>
+			              											<tr>
+			              												<td>dm
+			              												</td><td>string
+			              												</td><td>代码
+			              											</td></tr>
+			              											<tr>
+			              												<td>mc
+			              												</td><td>string
+			              												</td><td>名称
+			              											</td></tr>
+			              											<tr>
+			              												<td>lx
+			              												</td><td>string
+			              												</td><td>类型
+			              											</td></tr>
+			              											<tr>
+			              												<td>ggrq
+			              												</td><td>string
+			              												</td><td>公告日期
+			              											</td></tr>
+			              											<tr>
+			              												<td>bgq
+			              												</td><td>string
+			              												</td><td>报告期
+			              											</td></tr>
+			              											<tr>
+			              												<td>yjzy
+			              												</td><td>string
+			              												</td><td>业绩预告摘要
+			              											</td></tr>
+			              											<tr>
+			              												<td>qntq
+			              												</td><td>number
+			              												</td><td>上年同期每股收益(元)
+			              											</td></tr>
+			              											<tr>
+			              												<td>yjzf
+			              												</td><td>string
+			              												</td><td>业绩增幅
+			              											</td></tr>
+			              											<tr>
+			              												<td>y
+			              												</td><td>number
+			              												</td><td>报告年份，如2021
+			              											</td></tr>
+			              											<tr>
+			              												<td>q
+			              												</td><td>number
+			              												</td><td>报告季度，1:一季报，2：中报，3：三季报，4：年报
+			              											</td></tr>
+			              											<tr>
+			              												<td>yq
+			              												</td><td>string
+			              												</td><td>报告年份季度含义，如“2021年一季报”
+			              											</td></tr>                                       
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 业绩快报 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">业绩快报</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hicw/yjkb/2023/1/biyinglicence">http://api.biyingapi.com/hicw/yjkb/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hicw/yjkb/2023/1/biyinglicence">http://api1.biyingapi.com/hicw/yjkb/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hicw/yjkb/2023/1/biyinglicence">http://n.biyingapi.com/hicw/yjkb/年度(如2020)/季度(如1)/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hicw/yjkb/2023/1/biyinglicence">http://b.biyingapi.com/hicw/yjkb/年度(如2020)/季度(如1)/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：个股业绩快报汇总，支持“年份_季度”查询，年份可选（1989~当前年份），季度可选（1:一季报，2：中报，3：三季报，4：年报），如“2021_1”，表示查询2021年一季度数据。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>
+			              											<tr>
+			              												<td>dm
+			              												</td><td>string
+			              												</td><td>代码
+			              											</td></tr>
+			              											<tr>
+			              												<td>mc
+			              												</td><td>string
+			              												</td><td>名称
+			              											</td></tr>
+			              											<tr>
+			              												<td>mgsy
+			              												</td><td>number
+			              												</td><td>每股收益(元)
+			              											</td></tr>
+			              											<tr>
+			              												<td>yysr
+			              												</td><td>number
+			              												</td><td>营业收入(万元)
+			              											</td></tr>
+			              											<tr>
+			              												<td>yysrtb
+			              												</td><td>number
+			              												</td><td>营业收入同比(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>jlr
+			              												</td><td>number
+			              												</td><td>净利润(万元)
+			              											</td></tr>
+			              											<tr>
+			              												<td>jlrtb
+			              												</td><td>number
+			              												</td><td>净利润同比(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>mgjzc
+			              												</td><td>number
+			              												</td><td>每股净资产(元)
+			              											</td></tr>
+			              											<tr>
+			              												<td>jzcsyl
+			              												</td><td>number
+			              												</td><td>净资产收益率(%)
+			              											</td></tr>
+			              											<tr>
+			              												<td>zzc
+			              												</td><td>number
+			              												</td><td>总资产(万元)
+			              											</td></tr>
+			              											<tr>
+			              												<td>rdate
+			              												</td><td>string
+			              												</td><td>公告日期
+			              											</td></tr>
+			              											<tr>
+			              												<td>y
+			              												</td><td>number
+			              												</td><td>报告年份，如2021
+			              											</td></tr>
+			              											<tr>
+			              												<td>q
+			              												</td><td>number
+			              												</td><td>报告季度，1:一季报，2：中报，3：三季报，4：年报
+			              											</td></tr>
+			              											<tr>
+			              												<td>yq
+			              												</td><td>string
+			              												</td><td>报告年份季度含义，如“2021年一季报”
+			              											</td></tr>                                       
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 利润细分 -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">利润细分</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hicw/lr/biyinglicence">http://api.biyingapi.com/hicw/lr/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hicw/lr/biyinglicence">http://api1.biyingapi.com/hicw/lr/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hicw/lr/biyinglicence">http://n.biyingapi.com/hicw/lr/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hicw/lr/biyinglicence">http://b.biyingapi.com/hicw/lr/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：个股利润细分汇总。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>
+			              											<tr>
+			              												<td>dm
+			              												</td><td>string
+			              												</td><td>代码
+			              											</td></tr>
+			              											<tr>
+			              												<td>mc
+			              												</td><td>string
+			              												</td><td>名称
+			              											</td></tr>
+			              											<tr>
+			              												<td>sshy
+			              												</td><td>string
+			              												</td><td>所属行业
+			              											</td></tr>
+			              											<tr>
+			              												<td>sshysr
+			              												</td><td>number
+			              												</td><td>所属行业收入(万元)
+			              											</td></tr>
+			              											<tr>
+			              												<td>ckcb
+			              												</td><td>number
+			              												</td><td>所属行业参考成本(万元)
+			              											</td></tr>
+			              											<tr>
+			              												<td>cklr
+			              												</td><td>number
+			              												</td><td>参考利润(万元)
+			              											</td></tr>
+			              											<tr>
+			              												<td>lrms
+			              												</td><td>string
+			              												</td><td>利润描述
+			              											</td></tr>
+			              											<tr>
+			              												<td>rdate
+			              												</td><td>string
+			              												</td><td>报告日期
+			              											</td></tr>                                       
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			   
+			   
+		      <!-- 这里就是要修改的地方 -->
+			  
+			  
+             
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              Copyright © 2018-2024 必盈网络科技服务有限公司
+            </div>
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+			  客服电话：184-3512-8452&nbsp;&nbsp;&nbsp;&nbsp;客服微信ID：biyingapiclient
+			</div>
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+							<a target="_blank" href="https://beian.miit.gov.cn/">网站备案号：晋ICP备2023021176号</a>
+
+			</div>
+			
+			<div class="d-sm-flex justify-content-center justify-content-sm-between" style="color: red;">
+			       风险提示：本站所有免费及收费信息和数据仅供参考，不构成投资建议，本站不承担由此导致的任何法律责任。
+			</div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="static/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="static/js/off-canvas.js"></script>
+    <script src="static/js/hoverable-collapse.js"></script>
+    <script src="static/js/misc.js"></script>
+    <script src="static/js/settings.js"></script>
+    <script src="static/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+  
+</body></html>

@@ -1,0 +1,552 @@
+<!DOCTYPE html><html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>API文档 | 必盈API | 金融数据服务</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="static/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="static/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+    <!-- End layout styles -->
+	<script src="https://hm.baidu.com/hm.js?a525b3a8ede698e09c51bfa27ecf323e"></script><script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?a525b3a8ede698e09c51bfa27ecf323e";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+   
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="http://www.biyingapi.com"><img src="static/picture/logo.png" alt="logo"></a>
+          <a class="sidebar-brand brand-logo-mini" href="http://www.biyingapi.com"><img src="static/picture/logomini.png" alt="logo"></a>
+        </div>
+		
+		
+        <ul class="nav">
+ 
+          <li class="nav-item nav-category">
+            <span class="nav-link">API文档</span>	
+						
+						
+						
+						
+			</li><li class="nav-item menu-items active">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic1" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>							
+			    <span class="menu-title">沪深基础数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse show" id="ui-basic1">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="hslb.html">沪深股票列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="gsxq.html">公司详情</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="zjl.html">资金流</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zdgc.html">涨跌股池</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="rzrq.html">融资融券</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zsgn.html">指数、行业、概念</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="ssjy.html">实时交易</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zxsj.html">最新交易数据</a></li>
+				  <li class="nav-item"> <a class="nav-link active" href="lssj.html">历史交易数据</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">沪深分析数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic2">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="tzck.html">投资参考</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="lhb.html">龙虎榜</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="scbx.html">市场表现</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="cwfx.html">财务分析</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="jgcg.html">机构持股</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="bkzj.html">板块资金流向</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="ggzj.html">个股资金流向</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zjlx.html">资金线路图</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic3" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">沪深指数数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic3">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="hzlb.html">沪深指数列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="hzss.html">实时数据</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="zsjy.html">最新交易数据</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="lsjy.html">历史交易数据</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic4" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">基金行情数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic4">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="jjlb.html">基金列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="gzhq.html">估值行情</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="jszb.html">技术指标</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="daxx.html">档案信息</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			
+       
+        </ul>
+      
+	  
+	  </nav>
+	  
+	  
+	  
+	  
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="static/picture/logomini.png" alt="logo"></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+ 
+			
+			
+			<button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+			  
+			  
+			  
+          
+            
+			
+			
+			
+			<div class="row">
+				
+		       <!-- 历史分时交易 -->
+				
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title2">历史分时交易</h4>
+                    <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hszbl/fsjy/000001/15m/biyinglicence">http://api.biyingapi.com/hszbl/fsjy/股票代码(如000001)/分时级别/您的licence</a></p>
+					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hszbl/fsjy/000001/15m/biyinglicence">http://api1.biyingapi.com/hszbl/fsjy/股票代码(如000001)/分时级别/您的licence</a></p>
+					<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hszbl/fsjy/000001/15m/biyinglicence">http://n.biyingapi.com/hszbl/fsjy/股票代码(如000001)/分时级别/您的licence</a></p>
+					<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hszbl/fsjy/000001/15m/biyinglicence">http://b.biyingapi.com/hszbl/fsjy/股票代码(如000001)/分时级别/您的licence</a></p>
+					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码和分时级别获取历史交易数据，交易时间从远到近排序。目前 分时级别 支持5分钟、15分钟、30分钟、60分钟、日周月年级别（包括前后复权），对应的值分别是 5m（5分钟）、15m（15分钟）、30m（30分钟）、60m（60分钟）、dn(日线未复权)、dq（日线前复权）、dh（日线后复权）、wn(周线未复权)、wq（周线前复权）、wh（周线后复权）、mn(月线未复权)、mq（月线前复权）、mh（月线后复权）、yn(年线未复权)、yq（年线前复权）、yh（年线后复权） 。</p>
+					<p class="card-description2"> 数据更新：分钟级别数据盘中更新，分时越小越优先更新，如5分钟级别会每5分钟更新，15分钟级别会每15分钟更新，以此类推，日线及以上级别每天16:00更新。</p>
+					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+                    <p></p>
+                    <div class="table-responsive">
+                      <table class="table table-dark">
+                        <thead>
+                          <tr>
+                          												<td>字段名称
+                          												</td><td>数据类型
+                          												</td><td>字段说明
+                          											</td></tr>
+                          											<tr>
+                          												<td>d
+                          												</td><td>string
+                          												</td><td>交易时间，短分时级别格式为yyyy-MM-dd HH:mm:ss，日线级别为yyyy-MM-dd
+                          												
+                          											</td></tr>
+                          											<tr>
+                          												<td>o
+                          												</td><td>number
+                          												</td><td>开盘价（元）
+                          											</td></tr>
+                          											<tr>
+                          												<td>h
+                          												</td><td>number
+                          												</td><td>最高价（元）
+                          											</td></tr>
+                          											<tr>
+                          												<td>l
+                          												</td><td>number
+                          												</td><td>最低价（元）
+                          											</td></tr>
+                          											<tr>
+                          												<td>c
+                          												</td><td>number
+                          												</td><td>收盘价（元）
+                          											</td></tr>
+                          											<tr>
+                          												<td>v
+                          												</td><td>number
+                          												</td><td>成交量（手）
+                          											</td></tr>
+                          											<tr>
+                          												<td>e
+                          												</td><td>number
+                          												</td><td>成交额（元）
+                          											</td></tr>
+                          											<tr>
+                          												<td>zf
+                          												</td><td>number
+                          												</td><td>振幅（%）
+                          											</td></tr>
+                          											<tr>
+                          												<td>hs
+                          												</td><td>number
+                          												</td><td>换手率（%）
+                          											</td></tr>
+                          											<tr>
+                          												<td>zd
+                          												</td><td>number
+                          												</td><td>涨跌幅（%）
+                          											</td></tr>
+                          											<tr>
+                          												<td>zde
+                          												</td><td>number
+                          												</td><td>涨跌额（元）
+                          											</td></tr>                                             
+                        
+                      </thead></table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  <!-- 历史分时KDJ(9,3,3) -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">历史分时KDJ(9,3,3)</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hszbl/kdj/000001/15m/biyinglicence">http://api.biyingapi.com/hszbl/kdj/股票代码(如000001)/分时级别/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hszbl/kdj/000001/15m/biyinglicence">http://api1.biyingapi.com/hszbl/kdj/股票代码(如000001)/分时级别/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hszbl/kdj/000001/15m/biyinglicence">http://n.biyingapi.com/hszbl/kdj/股票代码(如000001)/分时级别/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hszbl/kdj/000001/15m/biyinglicence">http://b.biyingapi.com/hszbl/kdj/股票代码(如000001)/分时级别/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码和分时级别获取历史kdj数据，交易时间从远到近排序。目前 分时级别 支持5分钟、15分钟、30分钟、60分钟、日周月年级别（包括前后复权），对应的值分别是 5m（5分钟）、15m（15分钟）、30m（30分钟）、60m（60分钟）、dn(日线未复权)、dq（日线前复权）、dh（日线后复权）、wn(周线未复权)、wq（周线前复权）、wh（周线后复权）、mn(月线未复权)、mq（月线前复权）、mh（月线后复权）、yn(年线未复权)、yq（年线前复权）、yh（年线后复权） 。</p>
+			  					<p class="card-description2"> 数据更新：分钟级别数据盘中更新，分时越小越优先更新，如5分钟级别会每5分钟更新，15分钟级别会每15分钟更新，以此类推，日线及以上级别每天16:00更新。</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>
+			              											<tr>
+			              												<td>t
+			              												</td><td>string
+			              												</td><td>交易时间，短分时级别格式为yyyy-MM-dd HH:mm:ss，日线级别为yyyy-MM-dd
+			              												
+			              											</td></tr>
+			              											<tr>
+			              												<td>k
+			              												</td><td>number
+			              												</td><td>K值
+			              											</td></tr>
+			              											<tr>
+			              												<td>d
+			              												</td><td>number
+			              												</td><td>D值
+			              											</td></tr>
+			              											<tr>
+			              												<td>j
+			              												</td><td>number
+			              												</td><td>J值
+			              											</td></tr>                                        
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 历史分时MACD -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">历史分时MACD</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hszbl/macd/000001/15m/biyinglicence">http://api.biyingapi.com/hszbl/macd/股票代码(如000001)/分时级别/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hszbl/macd/000001/15m/biyinglicence">http://api1.biyingapi.com/hszbl/macd/股票代码(如000001)/分时级别/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hszbl/macd/000001/15m/biyinglicence">http://n.biyingapi.com/hszbl/macd/股票代码(如000001)/分时级别/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hszbl/macd/000001/15m/biyinglicence">http://b.biyingapi.com/hszbl/macd/股票代码(如000001)/分时级别/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码和分时级别获取历史macd数据，交易时间从远到近排序。目前 分时级别 支持5分钟、15分钟、30分钟、60分钟、日周月年级别（包括前后复权），对应的值分别是 5m（5分钟）、15m（15分钟）、30m（30分钟）、60m（60分钟）、dn(日线未复权)、dq（日线前复权）、dh（日线后复权）、wn(周线未复权)、wq（周线前复权）、wh（周线后复权）、mn(月线未复权)、mq（月线前复权）、mh（月线后复权）、yn(年线未复权)、yq（年线前复权）、yh（年线后复权） 。</p>
+			  					<p class="card-description2"> 数据更新：分钟级别数据盘中更新，分时越小越优先更新，如5分钟级别会每5分钟更新，15分钟级别会每15分钟更新，以此类推，日线及以上级别每天16:00更新。</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>
+			              											<tr>
+			              												<td>t
+			              												</td><td>string
+			              												</td><td>交易时间，短分时级别格式为yyyy-MM-dd HH:mm:ss，日线级别为yyyy-MM-dd
+			              												
+			              											</td></tr>
+			              											<tr>
+			              												<td>diff
+			              												</td><td>number
+			              												</td><td>DIFF值
+			              											</td></tr>
+			              											<tr>
+			              												<td>dea
+			              												</td><td>number
+			              												</td><td>DEA值
+			              											</td></tr>
+			              											<tr>
+			              												<td>macd
+			              												</td><td>number
+			              												</td><td>MACD值
+			              											</td></tr>
+			              											<tr>
+			              												<td>ema12
+			              												</td><td>number
+			              												</td><td>EMA（12）值
+			              											</td></tr>
+			              											<tr>
+			              												<td>ema26
+			              												</td><td>number
+			              												</td><td>EMA（26）值
+			              											</td></tr>                                      
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 历史分时MA -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">历史分时MA</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hszbl/ma/000001/15m/biyinglicence">http://api.biyingapi.com/hszbl/ma/股票代码(如000001)/分时级别/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hszbl/ma/000001/15m/biyinglicence">http://api1.biyingapi.com/hszbl/ma/股票代码(如000001)/分时级别/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hszbl/ma/000001/15m/biyinglicence">http://n.biyingapi.com/hszbl/ma/股票代码(如000001)/分时级别/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hszbl/ma/000001/15m/biyinglicence">http://b.biyingapi.com/hszbl/ma/股票代码(如000001)/分时级别/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码和分时级别获取历史ma数据，交易时间从远到近排序。目前 分时级别 支持5分钟、15分钟、30分钟、60分钟、日周月年级别（包括前后复权），对应的值分别是 5m（5分钟）、15m（15分钟）、30m（30分钟）、60m（60分钟）、dn(日线未复权)、dq（日线前复权）、dh（日线后复权）、wn(周线未复权)、wq（周线前复权）、wh（周线后复权）、mn(月线未复权)、mq（月线前复权）、mh（月线后复权）、yn(年线未复权)、yq（年线前复权）、yh（年线后复权） 。目前提供了ma3，ma5，ma10，ma15，ma20，ma30，ma60，ma120，ma200，ma250这些常用的移动平均线。</p>
+			  					<p class="card-description2"> 数据更新：数据更新：分钟级别数据盘中更新，分时越小越优先更新，如5分钟级别会每5分钟更新，15分钟级别会每15分钟更新，以此类推，日线及以上级别每天16:00更新。</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			             <tr>
+			             												<td>字段名称
+			             												</td><td>数据类型
+			             												</td><td>字段说明
+			             											</td></tr>
+			             											<tr>
+			             												<td>t
+			             												</td><td>string
+			             												</td><td>交易时间，短分时级别格式为yyyy-MM-dd HH:mm:ss，日线级别为yyyy-MM-dd
+			             												
+			             											</td></tr>
+			             											<tr>
+			             												<td>ma3
+			             												</td><td>number
+			             												</td><td>MA3，没有则为null
+			             											</td></tr>
+			             											<tr>
+			             												<td>ma5
+			             												</td><td>number
+			             												</td><td>MA5，没有则为null
+			             											</td></tr>
+			             											<tr>
+			             												<td>ma10
+			             												</td><td>number
+			             												</td><td>MA10，没有则为null
+			             											</td></tr>
+			             											<tr>
+			             												<td>ma15
+			             												</td><td>number
+			             												</td><td>MA20，没有则为null
+			             											</td></tr>
+			             											<tr>
+			             												<td>ma20
+			             												</td><td>number
+			             												</td><td>MA20，没有则为null
+			             											</td></tr>
+			             											<tr>
+			             												<td>ma30
+			             												</td><td>number
+			             												</td><td>MA30，没有则为null
+			             											</td></tr>
+			             											<tr>
+			             												<td>ma60
+			             												</td><td>number
+			             												</td><td>MA60，没有则为null
+			             											</td></tr>
+			             											<tr>
+			             												<td>ma120
+			             												</td><td>number
+			             												</td><td>MA120，没有则为null
+			             											</td></tr>
+			             											<tr>
+			             												<td>ma200
+			             												</td><td>number
+			             												</td><td>MA200，没有则为null
+			             											</td></tr>
+			             											<tr>
+			             												<td>ma250
+			             												</td><td>number
+			             												</td><td>MA250，没有则为null
+			             											</td></tr>          
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!--历史分时BOLL(20,2) -->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">历史分时BOLL(20,2)</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/hszbl/boll/000001/15m/biyinglicence">http://api.biyingapi.com/hszbl/boll/股票代码(如000001)/分时级别/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/hszbl/boll/000001/15m/biyinglicence">http://api1.biyingapi.com/hszbl/boll/股票代码(如000001)/分时级别/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/hszbl/boll/000001/15m/biyinglicence">http://n.biyingapi.com/hszbl/boll/股票代码(如000001)/分时级别/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/hszbl/boll/000001/15m/biyinglicence">http://b.biyingapi.com/hszbl/boll/股票代码(如000001)/分时级别/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：根据《股票列表》得到的股票代码和分时级别获取历史boll数据，交易时间从远到近排序。目前 分时级别 支持5分钟、15分钟、30分钟、60分钟、日周月年级别（包括前后复权），对应的值分别是 5m（5分钟）、15m（15分钟）、30m（30分钟）、60m（60分钟）、dn(日线未复权)、dq（日线前复权）、dh（日线后复权）、wn(周线未复权)、wq（周线前复权）、wh（周线后复权）、mn(月线未复权)、mq（月线前复权）、mh（月线后复权）、yn(年线未复权)、yq（年线前复权）、yh（年线后复权） 。</p>
+			  					<p class="card-description2"> 数据更新：分钟级别数据盘中更新，分时越小越优先更新，如5分钟级别会每5分钟更新，15分钟级别会每15分钟更新，以此类推，日线及以上级别每天16:00更新。</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			             <tr>
+			             												<td>字段名称
+			             												</td><td>数据类型
+			             												</td><td>字段说明
+			             											</td></tr>
+			             											<tr>
+			             												<td>t
+			             												</td><td>string
+			             												</td><td>交易时间，短分时级别格式为yyyy-MM-dd HH:mm:ss，日线级别为yyyy-MM-dd
+			             												
+			             											</td></tr>
+			             											<tr>
+			             												<td>u
+			             												</td><td>number
+			             												</td><td>上轨
+			             											</td></tr>
+			             											<tr>
+			             												<td>d
+			             												</td><td>number
+			             												</td><td>下轨
+			             											</td></tr>
+			             											<tr>
+			             												<td>m
+			             												</td><td>number
+			             												</td><td>中轨
+			             											</td></tr>   
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+		      <!-- 这里就是要修改的地方 -->
+			  
+			  
+             
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              Copyright © 2018-2024 必盈网络科技服务有限公司
+            </div>
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+			  客服电话：184-3512-8452&nbsp;&nbsp;&nbsp;&nbsp;客服微信ID：biyingapiclient
+			</div>
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+			  <a target="_blank" href="https://beian.miit.gov.cn/">网站备案号：晋ICP备2023021176号</a>
+			  
+			</div>
+			
+			<div class="d-sm-flex justify-content-center justify-content-sm-between" style="color: red;">
+			       风险提示：本站所有免费及收费信息和数据仅供参考，不构成投资建议，本站不承担由此导致的任何法律责任。
+			</div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="static/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="static/js/off-canvas.js"></script>
+    <script src="static/js/hoverable-collapse.js"></script>
+    <script src="static/js/misc.js"></script>
+    <script src="static/js/settings.js"></script>
+    <script src="static/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+  
+</body></html>

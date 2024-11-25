@@ -1,0 +1,1282 @@
+<!DOCTYPE html><html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>API文档 | 必盈API | 金融数据服务</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="static/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="static/css/style.css">
+	<link rel="shortcut icon" href="favicon.ico">
+    <!-- End layout styles -->
+	<script src="https://hm.baidu.com/hm.js?a525b3a8ede698e09c51bfa27ecf323e"></script><script>
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?a525b3a8ede698e09c51bfa27ecf323e";
+	  var s = document.getElementsByTagName("script")[0]; 
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+   
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="http://www.biyingapi.com"><img src="static/picture/logo.png" alt="logo"></a>
+          <a class="sidebar-brand brand-logo-mini" href="http://www.biyingapi.com"><img src="static/picture/logomini.png" alt="logo"></a>
+        </div>
+		
+		
+        <ul class="nav">
+ 
+          <li class="nav-item nav-category">
+            <span class="nav-link">API文档</span>	
+						
+						
+						
+						
+			</li><li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic1" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>							
+			    <span class="menu-title">沪深基础数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic1">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="hslb.html">沪深股票列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="gsxq.html">公司详情</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="zjl.html">资金流</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zdgc.html">涨跌股池</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="rzrq.html">融资融券</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zsgn.html">指数、行业、概念</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="ssjy.html">实时交易</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zxsj.html">最新交易数据</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="lssj.html">历史交易数据</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			
+			<li class="nav-item menu-items active">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">沪深分析数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse show" id="ui-basic2">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="tzck.html">投资参考</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="lhb.html">龙虎榜</a></li>
+			      <li class="nav-item"> <a class="nav-link active" href="scbx.html">市场表现</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="cwfx.html">财务分析</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="jgcg.html">机构持股</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="bkzj.html">板块资金流向</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="ggzj.html">个股资金流向</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="zjlx.html">资金线路图</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic3" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">沪深指数数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic3">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="hzlb.html">沪深指数列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="hzss.html">实时数据</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="zsjy.html">最新交易数据</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="lsjy.html">历史交易数据</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			<li class="nav-item menu-items">
+			  <a class="nav-link" data-toggle="collapse" href="#ui-basic4" aria-expanded="false" aria-controls="ui-basic">
+			    <span class="menu-icon">
+			      <i class="mdi mdi-laptop"></i>
+			    </span>
+			    <span class="menu-title">基金行情数据</span>
+			    <i class="menu-arrow"></i>
+			  </a>
+			  <div class="collapse" id="ui-basic4">
+			    <ul class="nav flex-column sub-menu">
+			      <li class="nav-item"> <a class="nav-link" href="jjlb.html">基金列表</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="gzhq.html">估值行情</a></li>
+			      <li class="nav-item"> <a class="nav-link" href="jszb.html">技术指标</a></li>
+				  <li class="nav-item"> <a class="nav-link" href="daxx.html">档案信息</a></li>
+			    </ul>
+			  </div>
+			</li>
+			
+			
+			
+       
+        </ul>
+      
+	  
+	  </nav>
+	  
+	  
+	  
+	  
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="static/picture/logomini.png" alt="logo"></a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="mdi mdi-menu"></span>
+            </button>
+ 
+			
+			
+			<button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+			  
+			  
+			  
+          
+            
+			
+			
+			
+			<div class="row">
+				
+		       <!-- 阶段最高最低-->
+				
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title2">阶段最高最低</h4>
+                    <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/himk/jdzgzd/biyinglicence">http://api.biyingapi.com/himk/jdzgzd/您的licence</a></p>
+					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/himk/jdzgzd/biyinglicence">http://api1.biyingapi.com/himk/jdzgzd/您的licence</a></p>
+					<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/himk/jdzgzd/biyinglicence">http://n.biyingapi.com/himk/jdzgzd/您的licence</a></p>
+					<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/himk/jdzgzd/biyinglicence">http://b.biyingapi.com/himk/jdzgzd/您的licence</a></p>
+					<p class="card-description2"> 接口说明：市场中所有股票与指数的阶段性（近5日、10日、20日、60日）的最高最低价以及涨跌幅。</p>
+					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+                    <p></p>
+                    <div class="table-responsive">
+                      <table class="table table-dark">
+                        <thead>
+                          <tr>
+                          												<td>字段名称
+                          												</td><td>数据类型
+                          												</td><td>字段说明
+                          											</td></tr>
+                          											<tr>
+                          												<td>t
+                          												</td><td>string
+                          												</td><td>日期yyyy-MM-dd
+                          											</td></tr>
+                          											<tr>
+                          												<td>dm
+                          												</td><td>string
+                          												</td><td>代码
+                          											</td></tr>
+                          											<tr>
+                          												<td>mc
+                          												</td><td>string
+                          												</td><td>名称
+                          											</td></tr>
+                          											<tr>
+                          												<td>g5
+                          												</td><td>number
+                          												</td><td>近5日最高价
+                          											</td></tr>
+                          											<tr>
+                          												<td>d5
+                          												</td><td>number
+                          												</td><td>近5日最低价
+                          											</td></tr>
+                          											<tr>
+                          												<td>zd5
+                          												</td><td>number
+                          												</td><td>近5日涨跌幅（%）
+                          											</td></tr>
+                          											<tr>
+                          												<td>iscq5
+                          												</td><td>number
+                          												</td><td>近5日是否除权除息（0：否，1：是）
+                          											</td></tr>
+                          											<tr>
+                          												<td>g10
+                          												</td><td>number
+                          												</td><td>近10日最高价
+                          											</td></tr>
+                          											<tr>
+                          												<td>d10
+                          												</td><td>number
+                          												</td><td>近10日最低价
+                          											</td></tr>
+                          											<tr>
+                          												<td>zd10
+                          												</td><td>number
+                          												</td><td>近10日涨跌幅（%）
+                          											</td></tr>
+                          											<tr>
+                          												<td>iscq10
+                          												</td><td>number
+                          												</td><td>近10日是否除权除息（0：否，1：是）
+                          											</td></tr>
+                          											<tr>
+                          												<td>g20
+                          												</td><td>number
+                          												</td><td>近20日最高价
+                          											</td></tr>
+                          											<tr>
+                          												<td>d20
+                          												</td><td>number
+                          												</td><td>近20日最低价
+                          											</td></tr>
+                          											<tr>
+                          												<td>zd20
+                          												</td><td>number
+                          												</td><td>近20日涨跌幅（%）
+                          											</td></tr>
+                          											<tr>
+                          												<td>iscq20
+                          												</td><td>number
+                          												</td><td>近20日是否除权除息（0：否，1：是）
+                          											</td></tr>
+                          											<tr>
+                          												<td>g60
+                          												</td><td>number
+                          												</td><td>近60日最高价
+                          											</td></tr>
+                          											<tr>
+                          												<td>d60
+                          												</td><td>number
+                          												</td><td>近60日最低价
+                          											</td></tr>
+                          											<tr>
+                          												<td>zd60
+                          												</td><td>number
+                          												</td><td>近60日涨跌幅（%）
+                          											</td></tr>
+                          											<tr>
+                          												<td>iscq60
+                          												</td><td>number
+                          												</td><td>近60日是否除权除息（0：否，1：是）
+                          											</td></tr>                                  
+                        
+                      </thead></table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			  <!-- 盘中创新高个股-->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">盘中创新高个股</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/himk/pzxg/biyinglicence">http://api.biyingapi.com/himk/pzxg/您的licencee</a></p><a class="card-description2" href="http://api.biyingapi.com/himk/pzxg/biyinglicence">
+			  					</a><p class="card-description3"><a class="card-description2" href="http://api.biyingapi.com/himk/pzxg/biyinglicence"> 备用接口：</a><a class="card-description3" href="http://api.biyingapi.com/himk/pzxg/biyinglicence">http://api1.biyingapi.com/himk/pzxg/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/himk/pzxg/biyinglicence">http://n.biyingapi.com/himk/pzxg/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/himk/pzxg/biyinglicence">http://b.biyingapi.com/himk/pzxg/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：沪深A股今日创最近30个交易日内价格新高的股票。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>
+			              											<tr>
+			              												<td>t
+			              												</td><td>string
+			              												</td><td>日期yyyy-MM-dd
+			              											</td></tr>
+			              											<tr>
+			              												<td>dm
+			              												</td><td>string
+			              												</td><td>代码
+			              											</td></tr>
+			              											<tr>
+			              												<td>mc
+			              												</td><td>string
+			              												</td><td>名称
+			              											</td></tr>
+			              											<tr>
+			              												<td>c
+			              												</td><td>number
+			              												</td><td>收盘价
+			              											</td></tr>
+			              											<tr>
+			              												<td>h
+			              												</td><td>number
+			              												</td><td>最高价
+			              											</td></tr>
+			              											<tr>
+			              												<td>l
+			              												</td><td>number
+			              												</td><td>最低价
+			              											</td></tr>
+			              											<tr>
+			              												<td>zdf
+			              												</td><td>number
+			              												</td><td>涨跌幅（%）
+			              											</td></tr>
+			              											<tr>
+			              												<td>iscq
+			              												</td><td>number
+			              												</td><td>当天是否除权除息（0：否，1：是）
+			              											</td></tr>
+			              											<tr>
+			              												<td>hs
+			              												</td><td>number
+			              												</td><td>换手率（%）
+			              											</td></tr>
+			              											<tr>
+			              												<td>zdf5
+			              												</td><td>number
+			              												</td><td>5日涨跌幅（%）
+			              											</td></tr>
+			              											<tr>
+			              												<td>iscq5
+			              												</td><td>number
+			              												</td><td>近5日是否除权除息（0：否，1：是）
+			              											</td></tr>
+			              											<tr>
+			              												<td>zdf10
+			              												</td><td>number
+			              												</td><td>10日涨跌幅（%）
+			              											</td></tr>
+			              											<tr>
+			              												<td>iscq10
+			              												</td><td>number
+			              												</td><td>近10日是否除权除息（0：否，1：是）
+			              											</td></tr>
+			              											<tr>
+			              												<td>zdf20
+			              												</td><td>number
+			              												</td><td>20日涨跌幅（%）
+			              											</td></tr>
+			              											<tr>
+			              												<td>iscq20
+			              												</td><td>number
+			              												</td><td>近20日是否除权除息（0：否，1：是）
+			              											</td></tr>                             
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 盘中创新低个股-->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">盘中创新低个股</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/himk/pzxd/biyinglicence">http://api.biyingapi.com/himk/pzxd/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/himk/pzxd/biyinglicence">http://api1.biyingapi.com/himk/pzxd/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/himk/pzxd/biyinglicence">http://n.biyingapi.com/himk/pzxd/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/himk/pzxd/biyinglicence">http://b.biyingapi.com/himk/pzxd/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：沪深A股今日创最近30个交易日内价格新低的股票。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			              <tr>
+			              												<td>字段名称
+			              												</td><td>数据类型
+			              												</td><td>字段说明
+			              											</td></tr>
+			              											<tr>
+			              												<td>t
+			              												</td><td>string
+			              												</td><td>日期yyyy-MM-dd
+			              											</td></tr>
+			              											<tr>
+			              												<td>dm
+			              												</td><td>string
+			              												</td><td>代码
+			              											</td></tr>
+			              											<tr>
+			              												<td>mc
+			              												</td><td>string
+			              												</td><td>名称
+			              											</td></tr>
+			              											<tr>
+			              												<td>c
+			              												</td><td>number
+			              												</td><td>收盘价
+			              											</td></tr>
+			              											<tr>
+			              												<td>h
+			              												</td><td>number
+			              												</td><td>最高价
+			              											</td></tr>
+			              											<tr>
+			              												<td>l
+			              												</td><td>number
+			              												</td><td>最低价
+			              											</td></tr>
+			              											<tr>
+			              												<td>zdf
+			              												</td><td>number
+			              												</td><td>涨跌幅（%）
+			              											</td></tr>
+			              											<tr>
+			              												<td>iscq
+			              												</td><td>number
+			              												</td><td>当天是否除权除息（0：否，1：是）
+			              											</td></tr>
+			              											<tr>
+			              												<td>hs
+			              												</td><td>number
+			              												</td><td>换手率（%）
+			              											</td></tr>
+			              											<tr>
+			              												<td>zdf5
+			              												</td><td>number
+			              												</td><td>5日涨跌幅（%）
+			              											</td></tr>
+			              											<tr>
+			              												<td>iscq5
+			              												</td><td>number
+			              												</td><td>近5日是否除权除息（0：否，1：是）
+			              											</td></tr>
+			              											<tr>
+			              												<td>zdf10
+			              												</td><td>number
+			              												</td><td>10日涨跌幅（%）
+			              											</td></tr>
+			              											<tr>
+			              												<td>iscq10
+			              												</td><td>number
+			              												</td><td>近10日是否除权除息（0：否，1：是）
+			              											</td></tr>
+			              											<tr>
+			              												<td>zdf20
+			              												</td><td>number
+			              												</td><td>20日涨跌幅（%）
+			              											</td></tr>
+			              											<tr>
+			              												<td>iscq20
+			              												</td><td>number
+			              												</td><td>近20日是否除权除息（0：否，1：是）
+			              											</td></tr>                        
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 成交骤增个股-->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">成交骤增个股</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/himk/cjzz/biyinglicence">http://api.biyingapi.com/himk/cjzz/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/himk/cjzz/biyinglicence">http://api1.biyingapi.com/himk/cjzz/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/himk/cjzz/biyinglicence">http://n.biyingapi.com/himk/cjzz/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/himk/cjzz/biyinglicence">http://b.biyingapi.com/himk/cjzz/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：沪深A股中今日成交量较上一交易日成交量大幅增加的股票。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			             <tr>
+			             	<th style="width: 20%;">字段名称</th>
+			             	<th style="width: 20%;">数据类型</th>
+			             	<th style="width: 60%;">字段说明</th>
+			             </tr>
+			             <tr>
+			             	<th style="width: 20%;">t</th>
+			             	<th style="width: 20%;">string</th>
+			             	<th style="width: 60%;">日期yyyy-MM-dd</th>
+			             </tr>
+			             <tr>
+			             	<th style="width: 20%;">dm</th>
+			             	<th style="width: 20%;">string</th>
+			             	<th style="width: 60%;">代码</th>
+			             </tr>
+			             <tr>
+			             	<th style="width: 20%;">mc</th>
+			             	<th style="width: 20%;">string</th>
+			             	<th style="width: 60%;">名称</th>
+			             </tr>
+			             <tr>
+			             	<th style="width: 20%;">c</th>
+			             	<th style="width: 20%;">number</th>
+			             	<th style="width: 60%;">收盘价</th>
+			             </tr>
+			             <tr>
+			             	<th style="width: 20%;">zdf</th>
+			             	<th style="width: 20%;">number</th>
+			             	<th style="width: 60%;">涨跌幅（%）</th>
+			             </tr>
+			             <tr>
+			             	<th style="width: 20%;">iscq</th>
+			             	<th style="width: 20%;">number</th>
+			             	<th style="width: 60%;">当天是否除权除息（0：否，1：是）</th>
+			             </tr>
+			             <tr>
+			             	<th style="width: 20%;">v</th>
+			             	<th style="width: 20%;">number</th>
+			             	<th style="width: 60%;">成交量（股）</th>
+			             </tr>
+			             <tr>
+			             	<th style="width: 20%;">pv</th>
+			             	<th style="width: 20%;">number</th>
+			             	<th style="width: 60%;">前一交易日成交量（股）</th>
+			             </tr>
+			             <tr>
+			             	<th style="width: 20%;">zjl</th>
+			             	<th style="width: 20%;">number</th>
+			             	<th style="width: 60%;">增减量（股）</th>
+			             </tr>
+			             <tr>
+			             	<th style="width: 20%;">zjf</th>
+			             	<th style="width: 20%;">number</th>
+			             	<th style="width: 60%;">增减幅（%）</th>
+			             </tr>            
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  
+			  <!-- 成交骤减个股-->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">成交骤减个股</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/himk/cjzj/biyinglicence">http://api.biyingapi.com/himk/cjzj/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/himk/cjzj/biyinglicence">http://api1.biyingapi.com/himk/cjzj/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/himk/cjzj/biyinglicence">http://n.biyingapi.com/himk/cjzj/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/himk/cjzj/biyinglicence">http://b.biyingapi.com/himk/cjzj/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：沪深A股中今日成交量较上一交易日成交量大幅减少的股票。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			             <tr>
+			             												<td>字段名称
+			             												</td><td>数据类型
+			             												</td><td>字段说明
+			             											</td></tr>
+			             											<tr>
+			             												<td>t
+			             												</td><td>string
+			             												</td><td>日期yyyy-MM-dd
+			             											</td></tr>
+			             											<tr>
+			             												<td>dm
+			             												</td><td>string
+			             												</td><td>代码
+			             											</td></tr>
+			             											<tr>
+			             												<td>mc
+			             												</td><td>string
+			             												</td><td>名称
+			             											</td></tr>
+			             											<tr>
+			             												<td>c
+			             												</td><td>number
+			             												</td><td>收盘价
+			             											</td></tr>
+			             											<tr>
+			             												<td>zdf
+			             												</td><td>number
+			             												</td><td>涨跌幅（%）
+			             											</td></tr>
+			             											<tr>
+			             												<td>iscq
+			             												</td><td>number
+			             												</td><td>当天是否除权除息（0：否，1：是）
+			             											</td></tr>
+			             											<tr>
+			             												<td>v
+			             												</td><td>number
+			             												</td><td>成交量（股）
+			             											</td></tr>
+			             											<tr>
+			             												<td>pv
+			             												</td><td>number
+			             												</td><td>前一交易日成交量（股）
+			             											</td></tr>
+			             											<tr>
+			             												<td>zjl
+			             												</td><td>number
+			             												</td><td>增减量（股）
+			             											</td></tr>
+			             											<tr>
+			             												<td>zjf
+			             												</td><td>number
+			             												</td><td>增减幅（%）
+			             											</td></tr>
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 连续放量个股-->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">连续放量个股</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/himk/lxfl/biyinglicence">http://api.biyingapi.com/himk/lxfl/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/himk/lxfl/biyinglicence">http://api1.biyingapi.com/himk/lxfl/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/himk/lxfl/biyinglicence">http://n.biyingapi.com/himk/lxfl/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/himk/lxfl/biyinglicence">http://b.biyingapi.com/himk/lxfl/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：沪深A股中成交量连续放大的股票。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			            <tr>
+			            	<th style="width: 20%;">字段名称</th>
+			            	<th style="width: 20%;">数据类型</th>
+			            	<th style="width: 60%;">字段说明</th>
+			            </tr>
+			            <tr>
+			            	<th style="width: 20%;">t</th>
+			            	<th style="width: 20%;">string</th>
+			            	<th style="width: 60%;">日期yyyy-MM-dd</th>
+			            </tr>
+			            <tr>
+			            	<th style="width: 20%;">dm</th>
+			            	<th style="width: 20%;">string</th>
+			            	<th style="width: 60%;">代码</th>
+			            </tr>
+			            <tr>
+			            	<th style="width: 20%;">mc</th>
+			            	<th style="width: 20%;">string</th>
+			            	<th style="width: 60%;">名称</th>
+			            </tr>
+			            <tr>
+			            	<th style="width: 20%;">c</th>
+			            	<th style="width: 20%;">number</th>
+			            	<th style="width: 60%;">收盘价</th>
+			            </tr>
+			            <tr>
+			            	<th style="width: 20%;">zdf</th>
+			            	<th style="width: 20%;">number</th>
+			            	<th style="width: 60%;">涨跌幅（%）</th>
+			            </tr>
+			            <tr>
+			            	<th style="width: 20%;">iscq</th>
+			            	<th style="width: 20%;">number</th>
+			            	<th style="width: 60%;">当天是否除权除息（0：否，1：是）</th>
+			            </tr>
+			            <tr>
+			            	<th style="width: 20%;">v</th>
+			            	<th style="width: 20%;">number</th>
+			            	<th style="width: 60%;">成交量（股）</th>
+			            </tr>
+			            <tr>
+			            	<th style="width: 20%;">pv</th>
+			            	<th style="width: 20%;">number</th>
+			            	<th style="width: 60%;">前一交易日成交量（股）</th>
+			            </tr>
+			            <tr>
+			            	<th style="width: 20%;">flday</th>
+			            	<th style="width: 20%;">number</th>
+			            	<th style="width: 60%;">放量天数</th>
+			            </tr>
+			            <tr>
+			            	<th style="width: 20%;">pzdf</th>
+			            	<th style="width: 20%;">number</th>
+			            	<th style="width: 60%;">阶段涨跌幅（%）</th>
+			            </tr>
+			            <tr>
+			            	<th style="width: 20%;">ispcq</th>
+			            	<th style="width: 20%;">number</th>
+			            	<th style="width: 60%;">阶段是否除权除息（0：否，1：是）</th>
+			            </tr>
+			            <tr>
+			            	<th style="width: 20%;">phs</th>
+			            	<th style="width: 20%;">number</th>
+			            	<th style="width: 60%;">阶段换手率（%）</th>
+			            </tr>
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 连续缩量个股-->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">连续缩量个股</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/himk/lxsl/biyinglicence">http://api.biyingapi.com/himk/lxsl/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/himk/lxsl/biyinglicence">http://api1.biyingapi.com/himk/lxsl/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/himk/lxsl/biyinglicence">http://n.biyingapi.com/himk/lxsl/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/himk/lxsl/biyinglicence">http://b.biyingapi.com/himk/lxsl/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：沪深A股中成交量连续放大的股票。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			            <tr>
+			            												<td>字段名称
+			            												</td><td>数据类型
+			            												</td><td>字段说明
+			            											</td></tr>
+			            											<tr>
+			            												<td>t
+			            												</td><td>string
+			            												</td><td>日期yyyy-MM-dd
+			            											</td></tr>
+			            											<tr>
+			            												<td>dm
+			            												</td><td>string
+			            												</td><td>代码
+			            											</td></tr>
+			            											<tr>
+			            												<td>mc
+			            												</td><td>string
+			            												</td><td>名称
+			            											</td></tr>
+			            											<tr>
+			            												<td>c
+			            												</td><td>number
+			            												</td><td>收盘价
+			            											</td></tr>
+			            											<tr>
+			            												<td>zdf
+			            												</td><td>number
+			            												</td><td>涨跌幅（%）
+			            											</td></tr>
+			            											<tr>
+			            												<td>iscq
+			            												</td><td>number
+			            												</td><td>当天是否除权除息（0：否，1：是）
+			            											</td></tr>
+			            											<tr>
+			            												<td>v
+			            												</td><td>number
+			            												</td><td>成交量（股）
+			            											</td></tr>
+			            											<tr>
+			            												<td>pv
+			            												</td><td>number
+			            												</td><td>前一交易日成交量（股）
+			            											</td></tr>
+			            											<tr>
+			            												<td>flday
+			            												</td><td>number
+			            												</td><td>放量天数
+			            											</td></tr>
+			            											<tr>
+			            												<td>pzdf
+			            												</td><td>number
+			            												</td><td>阶段涨跌幅（%）
+			            											</td></tr>
+			            											<tr>
+			            												<td>ispcq
+			            												</td><td>number
+			            												</td><td>阶段是否除权除息（0：否，1：是）
+			            											</td></tr>
+			            											<tr>
+			            												<td>phs
+			            												</td><td>number
+			            												</td><td>阶段换手率（%）
+			            											</td></tr>
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 连续上涨个股-->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">连续上涨个股</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/himk/lxsz/biyinglicence">http://api.biyingapi.com/himk/lxsz/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/himk/lxsz/biyinglicence">http://api1.biyingapi.com/himk/lxsz/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/himk/lxsz/biyinglicence">http://n.biyingapi.com/himk/lxsz/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/himk/lxsz/biyinglicence">http://b.biyingapi.com/himk/lxsz/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：沪深A股中连续上涨的股票。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			            <tr>
+			            												<td>字段名称
+			            												</td><td>数据类型
+			            												</td><td>字段说明
+			            											</td></tr>
+			            											<tr>
+			            												<td>t
+			            												</td><td>string
+			            												</td><td>日期yyyy-MM-dd
+			            											</td></tr>
+			            											<tr>
+			            												<td>dm
+			            												</td><td>string
+			            												</td><td>代码
+			            											</td></tr>
+			            											<tr>
+			            												<td>mc
+			            												</td><td>string
+			            												</td><td>名称
+			            											</td></tr>
+			            											<tr>
+			            												<td>c
+			            												</td><td>number
+			            												</td><td>收盘价
+			            											</td></tr>
+			            											<tr>
+			            												<td>zdf
+			            												</td><td>number
+			            												</td><td>涨跌幅（%）
+			            											</td></tr>
+			            											<tr>
+			            												<td>iscq
+			            												</td><td>number
+			            												</td><td>当天是否除权除息（0：否，1：是）
+			            											</td></tr>
+			            											<tr>
+			            												<td>v
+			            												</td><td>number
+			            												</td><td>成交量（股）
+			            											</td></tr>
+			            											<tr>
+			            												<td>hs
+			            												</td><td>number
+			            												</td><td>换手（%）
+			            											</td></tr>
+			            											<tr>
+			            												<td>szday
+			            												</td><td>number
+			            												</td><td>上涨天数
+			            											</td></tr>
+			            											<tr>
+			            												<td>pzdf
+			            												</td><td>number
+			            												</td><td>阶段涨跌幅（%）
+			            											</td></tr>
+			            											<tr>
+			            												<td>ispcq
+			            												</td><td>number
+			            												</td><td>阶段是否除权除息（0：否，1：是）
+			            											</td></tr>
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- 连续下跌个股-->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">连续下跌个股</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/himk/lxxd/biyinglicence">http://api.biyingapi.com/himk/lxxd/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/himk/lxxd/biyinglicence">http://api1.biyingapi.com/himk/lxxd/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/himk/lxxd/biyinglicence">http://n.biyingapi.com/himk/lxxd/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/himk/lxxd/biyinglicence">http://b.biyingapi.com/himk/lxxd/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：沪深A股中连续下跌的股票。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			          <tr>
+			          												<td>字段名称
+			          												</td><td>数据类型
+			          												</td><td>字段说明
+			          											</td></tr>
+			          											<tr>
+			          												<td>t
+			          												</td><td>string
+			          												</td><td>日期yyyy-MM-dd
+			          											</td></tr>
+			          											<tr>
+			          												<td>dm
+			          												</td><td>string
+			          												</td><td>代码
+			          											</td></tr>
+			          											<tr>
+			          												<td>mc
+			          												</td><td>string
+			          												</td><td>名称
+			          											</td></tr>
+			          											<tr>
+			          												<td>c
+			          												</td><td>number
+			          												</td><td>收盘价
+			          											</td></tr>
+			          											<tr>
+			          												<td>zdf
+			          												</td><td>number
+			          												</td><td>涨跌幅（%）
+			          											</td></tr>
+			          											<tr>
+			          												<td>iscq
+			          												</td><td>number
+			          												</td><td>当天是否除权除息（0：否，1：是）
+			          											</td></tr>
+			          											<tr>
+			          												<td>v
+			          												</td><td>number
+			          												</td><td>成交量（股）
+			          											</td></tr>
+			          											<tr>
+			          												<td>hs
+			          												</td><td>number
+			          												</td><td>换手（%）
+			          											</td></tr>
+			          											<tr>
+			          												<td>szday
+			          												</td><td>number
+			          												</td><td>上涨天数
+			          											</td></tr>
+			          											<tr>
+			          												<td>pzdf
+			          												</td><td>number
+			          												</td><td>阶段涨跌幅（%）
+			          											</td></tr>
+			          											<tr>
+			          												<td>ispcq
+			          												</td><td>number
+			          												</td><td>阶段是否除权除息（0：否，1：是）
+			          											</td></tr>
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			
+			  <!--流通市值排行-->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">流通市值排行</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/himk/ltszph/biyinglicence">http://api.biyingapi.com/himk/ltszph/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/himk/ltszph/biyinglicence">http://api1.biyingapi.com/himk/ltszph/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/himk/ltszph/biyinglicence">http://n.biyingapi.com/himk/ltszph/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/himk/ltszph/biyinglicence">http://b.biyingapi.com/himk/ltszph/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：沪深A股流通市值排名。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			        <tr>
+			        												<td>字段名称
+			        												</td><td>数据类型
+			        												</td><td>字段说明
+			        											</td></tr>
+			        											<tr>
+			        												<td>t
+			        												</td><td>string
+			        												</td><td>日期yyyy-MM-dd
+			        											</td></tr>
+			        											<tr>
+			        												<td>dm
+			        												</td><td>string
+			        												</td><td>代码
+			        											</td></tr>
+			        											<tr>
+			        												<td>mc
+			        												</td><td>string
+			        												</td><td>名称
+			        											</td></tr>
+			        											<tr>
+			        												<td>c
+			        												</td><td>number
+			        												</td><td>收盘价
+			        											</td></tr>
+			        											<tr>
+			        												<td>zdf
+			        												</td><td>number
+			        												</td><td>涨跌幅（%）
+			        											</td></tr>
+			        											<tr>
+			        												<td>v
+			        												</td><td>number
+			        												</td><td>成交量（股）
+			        											</td></tr>
+			        											<tr>
+			        												<td>hs
+			        												</td><td>number
+			        												</td><td>换手率（%）
+			        											</td></tr>
+			        											<tr>
+			        												<td>ltsz
+			        												</td><td>number
+			        												</td><td>流通市值（万元）
+			        											</td></tr>
+			        											<tr>
+			        												<td>zsz
+			        												</td><td>number
+			        												</td><td>总市值（万元）
+			        											</td></tr>
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!--市盈率排行-->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">市盈率排行</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/himk/syl/biyinglicence">http://api.biyingapi.com/himk/syl/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/himk/syl/biyinglicence">http://api1.biyingapi.com/himk/syl/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/himk/syl/biyinglicence">http://n.biyingapi.com/himk/syl/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/himk/syl/biyinglicence">http://b.biyingapi.com/himk/syl/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：沪深A股静态市盈率、动态市盈率排名，静态市盈率以最近一个年度收益进行计算，动态市盈率以最近四个季度的单季收益进行计算。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			       <tr>
+			       												<td>字段名称
+			       												</td><td>数据类型
+			       												</td><td>字段说明
+			       											</td></tr>
+			       											<tr>
+			       												<td>t
+			       												</td><td>string
+			       												</td><td>日期yyyy-MM-dd
+			       											</td></tr>
+			       											<tr>
+			       												<td>dm
+			       												</td><td>string
+			       												</td><td>代码
+			       											</td></tr>
+			       											<tr>
+			       												<td>mc
+			       												</td><td>string
+			       												</td><td>名称
+			       											</td></tr>
+			       											<tr>
+			       												<td>c
+			       												</td><td>number
+			       												</td><td>收盘价
+			       											</td></tr>
+			       											<tr>
+			       												<td>zdf
+			       												</td><td>number
+			       												</td><td>涨跌幅（%）
+			       											</td></tr>
+			       											<tr>
+			       												<td>v
+			       												</td><td>number
+			       												</td><td>成交量（股）
+			       											</td></tr>
+			       											<tr>
+			       												<td>hs
+			       												</td><td>number
+			       												</td><td>换手率（%）
+			       											</td></tr>
+			       											<tr>
+			       												<td>jpe
+			       												</td><td>number
+			       												</td><td>静态市盈率
+			       											</td></tr>
+			       											<tr>
+			       												<td>dpe
+			       												</td><td>number
+			       												</td><td>动态市盈率
+			       											</td></tr>
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			  <!--市净率排行-->
+			  				
+			  <div class="col-lg-12 grid-margin stretch-card">
+			    <div class="card">
+			      <div class="card-body">
+			        <h4 class="card-title2">市净率排行</h4>
+			        <p class="card-description2"> API接口：<a class="card-description2" href="http://api.biyingapi.com/himk/sjl/biyinglicence">http://api.biyingapi.com/himk/sjl/您的licence</a></p>
+			  					<p class="card-description3"> 备用接口：<a class="card-description3" href="http://api.biyingapi.com/himk/sjl/biyinglicence">http://api1.biyingapi.com/himk/sjl/您的licence</a></p>
+								<p class="card-description4"> 包年版专用接口：<a class="card-description4" href="http://api.biyingapi.com/himk/sjl/biyinglicence">http://n.biyingapi.com/himk/sjl/您的licence</a></p>
+								<p class="card-description5"> 白金版专用接口：<a class="card-description5" href="http://api.biyingapi.com/himk/sjl/biyinglicence">http://b.biyingapi.com/himk/sjl/您的licence</a></p>
+			  					<p class="card-description2"> 接口说明：沪深A股市净率排名。</p>
+			  					<p class="card-description2"> 数据更新：每天20:00（约10分钟完成更新）</p>
+			  					<p class="card-description2"> 请求频率：1分钟20次 | 包年版1分钟3000次 | 白金版1分钟6000次</p>
+			  					<p class="card-description2"> 返回格式：标准Json格式      [{},...{}]</p>
+			        <p></p>
+			        <div class="table-responsive">
+			          <table class="table table-dark">
+			            <thead>
+			       <tr>
+			       												<td>字段名称
+			       												</td><td>数据类型
+			       												</td><td>字段说明
+			       											</td></tr>
+			       											<tr>
+			       												<td>t
+			       												</td><td>string
+			       												</td><td>日期yyyy-MM-dd
+			       											</td></tr>
+			       											<tr>
+			       												<td>dm
+			       												</td><td>string
+			       												</td><td>代码
+			       											</td></tr>
+			       											<tr>
+			       												<td>mc
+			       												</td><td>string
+			       												</td><td>名称
+			       											</td></tr>
+			       											<tr>
+			       												<td>c
+			       												</td><td>number
+			       												</td><td>收盘价
+			       											</td></tr>
+			       											<tr>
+			       												<td>zdf
+			       												</td><td>number
+			       												</td><td>涨跌幅（%）
+			       											</td></tr>
+			       											<tr>
+			       												<td>v
+			       												</td><td>number
+			       												</td><td>成交量（股）
+			       											</td></tr>
+			       											<tr>
+			       												<td>hs
+			       												</td><td>number
+			       												</td><td>换手率（%）
+			       											</td></tr>
+			       											<tr>
+			       												<td>sjl
+			       												</td><td>number
+			       												</td><td>市净率
+			       											</td></tr>
+			       											<tr>
+			       												<td>jzc
+			       												</td><td>number
+			       												</td><td>每股净资产
+			       											</td></tr>
+			            
+			          </thead></table>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+		      <!-- 这里就是要修改的地方 -->
+			  
+			  
+             
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              Copyright © 2018-2024 必盈网络科技服务有限公司
+            </div>
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+			  客服电话：184-3512-8452&nbsp;&nbsp;&nbsp;&nbsp;客服微信ID：biyingapiclient
+			</div>
+			<div class="d-sm-flex justify-content-center justify-content-sm-between">
+			  <a target="_blank" href="https://beian.miit.gov.cn/">网站备案号：晋ICP备2023021176号</a>
+			  
+			</div>
+			
+			<div class="d-sm-flex justify-content-center justify-content-sm-between" style="color: red;">
+			       风险提示：本站所有免费及收费信息和数据仅供参考，不构成投资建议，本站不承担由此导致的任何法律责任。
+			</div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="static/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="static/js/off-canvas.js"></script>
+    <script src="static/js/hoverable-collapse.js"></script>
+    <script src="static/js/misc.js"></script>
+    <script src="static/js/settings.js"></script>
+    <script src="static/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+  
+</body></html>
