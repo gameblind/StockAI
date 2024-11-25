@@ -1,6 +1,13 @@
 import json
 import requests
 import os
+import sys
+
+# 添加项目根目录到 sys.path
+if __name__ == "__main__" and "src" not in sys.path:
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+    if project_root not in sys.path:
+        sys.path.insert(0, project_root)
 
 def fetch_api_data(api_key_combined, additional_params=None, **kwargs):
     """

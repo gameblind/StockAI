@@ -3,12 +3,19 @@ import logging
 import os
 import requests
 import csv
+import sys
+
+# 添加项目根目录到 sys.path
+if __name__ == "__main__" and "src" not in sys.path:
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+    if project_root not in sys.path:
+        sys.path.insert(0, project_root)
 
 logging.basicConfig(level=logging.INFO)
 
 # 加载 API 配置
 def load_api_config():
-    settings_path = "config/setting.json"
+    settings_path = "config/settings.json"
     try:
         with open(settings_path, "r") as f:
             settings = json.load(f)

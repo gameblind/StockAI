@@ -1,6 +1,13 @@
 from PIL import ImageGrab
 from datetime import datetime
 import os
+import sys
+
+# 添加项目根目录到 sys.path
+if __name__ == "__main__" and "src" not in sys.path:
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+    if project_root not in sys.path:
+        sys.path.insert(0, project_root)
 
 # 创建子文件夹
 def create_screenshot_folder(folder_name="screenshots"):

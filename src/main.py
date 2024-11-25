@@ -4,8 +4,10 @@ import datetime
 import re
 import sys
 
+from utils.path_manager import add_project_root_to_path
+
 # 添加项目根目录到 sys.path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+add_project_root_to_path()
 
 from pynput import keyboard
 from src.screenshot.screen_capture import capture_fullscreen
