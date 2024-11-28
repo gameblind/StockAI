@@ -1,33 +1,38 @@
 import pandas as pd
 import json
 
-def excel_to_nested_json(excel_file, json_file, main_sheet, sub_sheet, key_column):
-    # 读取主表和子表
-    main_df = pd.read_excel(excel_file, sheet_name=main_sheet, engine='openpyxl')
-    sub_df = pd.read_excel(excel_file, sheet_name=sub_sheet, engine='openpyxl')
+def excel_to_json(excel_file, json_file):
+    """
+    将 Excel 文件中的每一行转换为 JSON 文件。
     
-    # 创建主表的字典结构
-    main_records = main_df.to_dict(orient='records')
+    :param excel_file: str, 输入的 Excel 文件路径。
+    :param json_file: str, 输出的 JSON 文件路径。
+    """
+    try:
+        # 读取 Excel 文件
+        df = pd.read_excel(excel_file)
+        
+        # 检查是否有数据
+        if df.empty:
+            raise ValueError("Excel 文件为空")
+        
+        # 将 DataFrame 转换为字典列表
+        data_list = df.to_dict(orient='records')
+        
+        # 将字典列表写入 JSON 文件
+        with open(json_file, 'w', encoding='utf-8') as f:
+            json.dump(data_list, f, ensure_ascii=False, indent=4)
+        
+        print(f"转换成功！JSON 文件已保存到: {json_file}")
     
-    # 按外键分组子表数据
-    sub_grouped = sub_df.groupby(key_column).apply(lambda x: x.to_dict(orient='records')).to_dict()
-    
-    # 将子表嵌套到主表中
-    for record in main_records:
-        record['fields'] = sub_grouped.get(record[key_column], [])
-    
-    # 保存为 JSON 文件
-    with open(json_file, 'w', encoding='utf-8') as f:
-        json.dump(main_records, f, ensure_ascii=False, indent=4)
-    
-    print(f"嵌套 JSON 数据已成功保存到 {json_file}")
+    except Exception as e:
+        print(f"发生错误: {e}")
 
-# 文件路径和参数
-excel_file = "dictionary.xlsx"  # 替换为你的 Excel 文件名
-json_file = "output_nested.json"  # 转换后的 JSON 文件名
-main_sheet = "apis"  # 主表 Sheet 名
-sub_sheet = "fields"  # 子表 Sheet 名
-key_column = "API Key Combined"  # 主键和外键字段名
+# 使用示例
+# 输入 Excel 文件路径
+excel_file_path = "project_tools/dictionary.xlsx"
+# 输出 JSON 文件路径
+json_file_path = "project_tools/apis.json"
 
 # 调用函数
-excel_to_nested_json(excel_file, json_file, main_sheet, sub_sheet, key_column)
+excel_to_json(excel_file_path, json_file_path)

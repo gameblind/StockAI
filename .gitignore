@@ -37,6 +37,8 @@ config/api_config.json
 # macOS specific files
 .DS_Store
 
+# test files and directories
+tests/
 # Output files and directories
 output/
 *.output
