@@ -56,7 +56,7 @@ def submit_request_to_api(model_name, prompt_text, image_url, settings):
     }
 
     try:
-        print(f"向大模型发送请求: {data}")
+        # print(f"向大模型发送请求: {data}")
         response = requests.post(f"{api_url}/v1/chat/completions", headers=headers, json=data)
         response.raise_for_status()
         result = response.json()
